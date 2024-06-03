@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer-container flex h-16 mt-auto items-center p-6">
       <div className="copyright-container flex w-2/4 h-full">
-        <p className="copyright-content text-sm text-woodsmoke-100">
+        <p className="copyright-content text-sm max-sm:hidden text-woodsmoke-100">
           © NC6 | Tous droits réservés
         </p>
       </div>
