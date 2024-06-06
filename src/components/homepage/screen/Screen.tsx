@@ -1,247 +1,114 @@
-import './style.css';
-import './reset.css';
-
 function ScreenComponent() {
   return (
-    <div className="object-container">
-      <div className="screen">
-        <div className="section site-section">
-          <div className="site-window-container">
-            <div className="topbar-container">
-              <div className="btns-container">
-                <div className="btn btn-close" />
-                <div className="btn btn-hide" />
-                <div className="btn btn-expand" />
-              </div>
-              <div className="searchbar-container">
-                <div className="searchbar" />
-              </div>
-            </div>
-            <div className="body-container">
-              <div className="content-container">
-                <div className="text-container">
-                  <div className="text-item text-title" />
-                  <div className="separator-xs" />
-                  <div className="text-item text-lg" />
-                  <div className="text-item text-md" />
-                  <div className="text-item text-sm" />
-                  <div className="text-item text-md" />
-                </div>
-                <div className="cards-container">
-                  <div className="card">
-                    <div className="card-content" />
-                    <div className="card-footer" />
-                  </div>
-                  <div className="card">
-                    <div className="card-content" />
-                    <div className="card-footer" />
-                  </div>
-                  <div className="card">
-                    <div className="card-content" />
-                    <div className="card-footer" />
-                  </div>
-                </div>
-              </div>
-              <div className="separator-m" />
-              <div className="content-container">
-                <div className="cards-container">
-                  <div className="card">
-                    <div className="card-content" />
-                    <div className="card-footer" />
-                  </div>
-                  <div className="card">
-                    <div className="card-content" />
-                    <div className="card-footer" />
-                  </div>
-                </div>
-                <div className="text-container">
-                  <div className="text-item text-md" />
-                  <div className="text-item text-lg" />
-                  <div className="text-item text-sm" />
-                  <div className="text-item text-sm" />
-                  <div className="text-item text-md" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="section code-interface-section">
-          <div className="code-container">
-            <div className="code-content">
-              <div className="line">
-                <div className="item function lg" />
-                <div className="item variable lg" />
-                <div className="item content md" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item variable sm" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item variable lg" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line">
-                <div className="item function lg" />
-                <div className="item other xlg" />
-              </div>
-              <div className="line tab1">
-                <div className="item other md" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item other md" />
-                <div className="item variable sm" />
-                <div className="item content md" />
-              </div>
-              <div className="line tab2">
-                <div className="item other md" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab3">
-                <div className="item other md" />
-                <div className="item content xxlg" />
-                <div className="item other s" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item variable lg" />
-                <div className="item content xlg" />
-                <div className="item other xlg" />
-                <div className="item other s" />
-              </div>
-              <div className="line tab1">
-                <div className="item function md" />
-                <div className="item content xxlg" />
-                <div className="item other xxlg" />
-              </div>
-              <div className="line tab1">
-                <div className="item function md" />
-                <div className="item variable xlg" />
-                <div className="item content lg" />
-                <div className="item other xxlg" />
-                <div className="item other md" />
-              </div>
-              <div className="line tab2">
-                <div className="item other lg" />
-                <div className="item variable lg" />
-              </div>
-              <div className="line tab3">
-                <div className="item other sm" />
-                <div className="item variable lg" />
-                <div className="item content md" />
-              </div>
-              <div className="line tab3">
-                <div className="item other md" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item other md" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-                <div className="item other sm" />
-                <div className="item other lg" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item other sm" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item other md" />
-                <div className="item other xsm" />
-                <div className="item variable sm" />
-                <div className="item content lg" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item variable xsm" />
-                <div className="item content xxlg" />
-              </div>
-              <div className="line">
-                <div className="item function xxlg" />
-                <div className="item variable sm" />
-                <div className="item other lg" />
-                <div className="item other md" />
-              </div>
-              <div className="line tab1">
-                <div className="item other md" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item other lg" />
-                <div className="item content xxlg" />
-              </div>
-              <div className="line tab1">
-                <div className="item other xsm" />
-                <div className="item variable sm" />
-                <div className="item content md" />
-              </div>
-              <div className="line tab2">
-                <div className="item function xlg" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab3">
-                <div className="item other md" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item function xlg" />
-                <div className="item other md" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item function lg" />
-                <div className="item content xxlg" />
-                <div className="item other md" />
-                <div className="item other sm" />
-              </div>
-              <div className="line tab2">
-                <div className="item function md" />
-                <div className="item variable sm" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item content sm" />
-                <div className="item other xlg" />
-                <div className="item other xlg" />
-              </div>
-              <div className="line">
-                <div className="item function md" />
-                <div className="item variable xlg" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item other md" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab2">
-                <div className="item other md" />
-                <div className="item other xxlg" />
-                <div className="item content xlg" />
-              </div>
-              <div className="line tab1">
-                <div className="item function lg" />
-                <div className="item variable xlg" />
-                <div className="item content xxlg" />
-                <div className="item other xsm" />
-                <div className="item other lg" />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="screen-container flex flex-col w-3/4 h-3/5 bg-[#0C0404] rounded-lg p-3 border-2 border-slate-400 overflow-y-scroll space-y-1 animate-floating">
+      <div className="line-tab0 flex w-2/4 h-[8px] space-x-2">
+        <div className="item-function w-[42px] bg-[#1434A4] animate-flickering-lg" />
+        <div className="item-variable w-[42px] bg-[#6495ED] animate-flickering-lg" />
+        <div className="item-content w-[30px] bg-[#F28C28] animate-flickering-md" />
+        <div className="item-other w-[6px] bg-[#464748] animate-flickering-xs" />
+        <div className="item-other w-[42px] bg-[#464748] animate-flickering-lg" />
+      </div>
+      <div className="line flex w-2/4 h-[8px] space-x-2">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+      </div>
+      <div className="line-tab1 flex w-2/4 h-[8px] space-x-2 ml-[15px]">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-variable w-[42px] bg-[#6495ED] animate-flickering-lg" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+      </div>
+      <div className="line-tab2 flex w-2/4 h-[8px] space-x-2 ml-[30px]">
+        <div className="item-function w-[42px] bg-[#1434A4] animate-flickering-lg" />
+        <div className="item-other w-[54px] bg-[#464748] animate-flickering-xlg" />
+      </div>
+      <div className="line-tab2 flex w-2/4 h-[8px] space-x-2 ml-[30px]">
+        <div className="item-other w-[30px] bg-[#464748] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+      </div>
+      <div className="line-tab1 flex w-2/4 h-[8px] space-x-2 ml-[15px]">
+        <div className="item-other w-[30px] bg-[#464748] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-content w-[30px] bg-[#F28C28] animate-flickering-md" />
+      </div>
+      <div className="line-tab2 flex w-2/4 h-[8px] space-x-2 ml-[30px]">
+        <div className="item-other w-[30px] bg-[#464748] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+      </div>
+      <div className="line-tab3 flex w-3/4 h-[8px] space-x-2 ml-[45px]">
+        <div className="item-other w-[42px] bg-[#464748] animate-flickering-lg" />
+        <div className="item-content w-[66px] bg-[#F28C28] animate-flickering-xxlg" />
+        <div className="item-other w-[6px] bg-[#464748] animate-flickering-xs" />
+        <div className="itemother w-[18px] bg-[#464748] animate-flickering-sm" />
+      </div>
+      <div className="line-tab3 flex w-3/4 h-[8px] space-x-2 ml-[45px]">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-variable w-[6px] bg-[#6495ED] animate-flickering-xs" />
+        <div className="item-variable w-[42px] bg-[#6495ED] animate-flickering-lg" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+        <div className="item-other w-[54px] bg-[#464748] animate-flickering-xlg" />
+        <div className="item-other w-[6px] bg-[#464748] animate-flickering-xs" />
+        <div className="item-other w-[18px] bg-[#464748] animate-flickering-sm" />
+      </div>
+      <div className="line-tab1 flex w-2/4 h-[8px] space-x-2 ml-[15px]">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-content w-[66px] bg-[#F28C28] animate-flickering-xxlg" />
+        <div className="item-other w-[66px] bg-[#464748] animate-flickering-xxlg" />
+      </div>
+      <div className="line-tab0 flex w-3/4 h-[8px] space-x-2">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-variable w-[54px] bg-[#6495ED] animate-flickering-xlg" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+        <div className="item-other w-[66px] bg-[#464748] animate-flickering-xxlg" />
+        <div className="item-other w-[30px] bg-[#464748] animate-flickering-md" />
+      </div>
+      <div className="line-tab1 flex w-2/4 h-[8px] space-x-2 ml-[15px]">
+        <div className="item-other w-[42px] bg-[#464748] animate-flickering-lg" />
+        <div className="item-variable w-[42px] bg-[#6495ED] animate-flickering-lg" />
+      </div>
+      <div className="line-tab1 flex w-2/4 h-[8px] space-x-2 ml-[15px]">
+        <div className="item-other w-[18px] bg-[#464748] animate-flickering-sm" />
+        <div className="item-variable w-[42px] bg-[#6495ED] animate-flickering-lg" />
+        <div className="item-content w-[30px] bg-[#F28C28] animate-flickering-md" />
+      </div>
+      <div className="line-tab2 flex w-2/4 h-[8px] space-x-2 ml-[30px]">
+        <div className="item-other w-[30px] bg-[#464748] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+      </div>
+      <div className="line-tab3 flex w-3/4 h-[8px] space-x-2 ml-[45px]">
+        <div className="item-other w-[30px] bg-[#464748] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-content w-[54px] bg-[#F28C28] animate-flickering-xlg" />
+        <div className="item-other w-[18px] bg-[#464748] animate-flickering-sm" />
+        <div className="item-other w-[42px] bg-[#464748] animate-flickering-lg" />
+      </div>
+      <div className="line-tab3 flex w-3/4 h-[8px] space-x-2 ml-[30px]">
+        <div className="item-other w-[42px] bg-[#464748] animate-flickering-lg" />
+        <div className="item-variable w-[54px] bg-[#6495ED] animate-flickering-xlg" />
+        <div className="item-content w-[66px] bg-[#F28C28] animate-flickering-xxlg" />
+        <div className="item-content w-[6px] bg-[#F28C28] animate-flickering-xs" />
+        <div className="item-other w-[18px] bg-[#464748] animate-flickering-sm" />
+      </div>
+      <div className="line-tab0 flex w-2/3 h-[8px] space-x-2">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-function w-[30px] bg-[#464748] animate-flickering-md" />
+        <div className="item-variable w-[6px] bg-[#6495ED] animate-flickering-xs" />
+        <div className="item-variable w-[54px] bg-[#6495ED] animate-flickering-xlg" />
+        <div className="item-content w-[54px] bg-[#464748] animate-flickering-xlg" />
+        <div className="item-other w-[66px] bg-[#464748] animate-flickering-xxlg" />
+      </div>
+      <div className="line-tab1 flex w-2/4 h-[8px] space-x-2 ml-[15px]">
+        <div className="item-function w-[54px] bg-[#1434A4] animate-flickering-xlg" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-content w-[42px] bg-[#F28C28] animate-flickering-lg" />
+        <div className="item-other w-[42px] bg-[#464748] animate-flickering-lg" />
+      </div>
+      <div className="line-tab2 flex w-2/4 h-[8px] space-x-2 ml-[30px]">
+        <div className="item-function w-[30px] bg-[#1434A4] animate-flickering-md" />
+        <div className="item-variable w-[18px] bg-[#6495ED] animate-flickering-sm" />
+        <div className="item-variable w-[42px] bg-[#6495ED animate-flickering-lg]" />
       </div>
     </div>
   );
