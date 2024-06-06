@@ -127,9 +127,9 @@
   },
   {
     "id": 19,
-    "name": "Mémoire",
-    "alt": "Icône représentant la mémoire",
-    "icon-mapping": "Memory",
+    "name": "Cookies",
+    "alt": "Icône représentant un cookie",
+    "icon-mapping": "Cookie",
     "type": "soft-skill"
   },
   {
