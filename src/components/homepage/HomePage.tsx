@@ -31,12 +31,6 @@ function HomePage() {
             <br /> Bienvenue sur mon portfolio&nbsp;!
           </p>
           <div className="homepage-btns-container flex justify-evenly w-full md:w-[60%]">
-            {/* <NavLink to="/about">
-              <Button>À propos</Button>
-            </NavLink>
-            <NavLink to="/projects">
-              <Button>Projets</Button>
-            </NavLink> */}
             <Button
               className="w-[200px] space-x-2"
               variant="outline"
