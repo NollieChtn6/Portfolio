@@ -1,9 +1,10 @@
-import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-vertical-timeline-component/style.min.css';
 import './timelineStyle.css';
 
