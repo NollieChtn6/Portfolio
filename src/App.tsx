@@ -2,7 +2,7 @@ import { Outlet } from 'react-router';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import ScreenSize from './components/devComponent/ScreenSize';
+// import ScreenSize from './components/devComponent/ScreenSize';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Outlet />
       <Footer />
-      <ScreenSize />
+      {/* <ScreenSize /> */}
     </div>
   );
 }
