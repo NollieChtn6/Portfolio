@@ -143,12 +143,44 @@ module.exports = {
           "100%": {
             borderColor: "white",
           }
+        },
+        flicker: {
+          "0%": {
+            opacity: 1,
+          },
+          "50%": {
+            opacity: 0.5,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+        float: {
+          "0%": {
+            "box-shadow": "0 5px 15px 0px rgba(0,0,0,0.8)",
+		        "transform": "translatey(0px)",
+          },
+          "50%": {
+            "box-shadow": "0 25px 15px 0px rgba(0,0,0,0.4)",
+		        "transform": "translatey(-20px)",
+          },
+          "100%": {
+            "box-shadow": "0 5px 15px 0px rgba(0,0,0,0.8)",
+		        "transform": "translatey(-0px)",
+          },
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "typing": "typing 3s steps(22), blink .7s infinite alternate",
+        "floating": "float 4s ease-in-out infinite",
+        "flickering-xs": "flicker 1.5s infinite",
+        "flickering-sm": "flicker 2s infinite",
+        "flickering-md": "flicker 1.3s infinite",
+        "flickering-lg": "flicker 1.5s infinite",
+        "flickering-xlg": "flicker 1.9s infinite",
+        "flickering-xxlg": "flicker 1s infinite",
       },
     },
   },
