@@ -42,7 +42,10 @@ function Header() {
                   <NavLink to="/about">
                     <Button>À propos</Button>
                   </NavLink>
-                  {/* <Button className="w-2/4">Parcours</Button>
+                  <NavLink to="/timeline">
+                    <Button>Parcours</Button>
+                  </NavLink>
+                  {/* 
                   <Button className="w-2/4">Projets</Button>
                   <Button className="w-2/4">Sandbox</Button>
                   <Button className="w-2/4">Contact</Button> */}
@@ -58,7 +61,9 @@ function Header() {
           <NavLink to="/about">
             <Button>À propos</Button>
           </NavLink>
-          <Button className="">Parcours</Button>
+          <NavLink to="/timeline">
+            <Button>Parcours</Button>
+          </NavLink>
           <Button className="">Projets</Button>
           <Button className="">Sandbox</Button>
           {/* <Button className="">Contact</Button> */}
