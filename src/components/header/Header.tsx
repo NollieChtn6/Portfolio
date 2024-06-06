@@ -23,12 +23,12 @@ function Header() {
           <img src={logo} alt="Logo NC6" className="md:w-[60%]" />
         </NavLink>
       </div>
-      <div className="flex nav-container bg-rolling-stone-500 items-center w-3/4 max-sm:2/4 justify-end">
+      <div className="flex nav-container items-center w-3/4 max-sm:2/4 justify-end">
         <div className="sheet-container flex md:hidden">
           <Sheet>
             <SheetTrigger>
               {' '}
-              <Button className="flex bg-transparent justify-self-end">
+              <Button className="flex bg-transparent justify-self-end w-[50px] p-0 ">
                 <Menu color="#f6f6f6" size={36} />
               </Button>
             </SheetTrigger>
