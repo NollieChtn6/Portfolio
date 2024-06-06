@@ -35,15 +35,15 @@ function Header() {
             <SheetContent>
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
-                <SheetDescription className="flex flex-col space-y-6 w-full items-center">
+                <SheetDescription className="flex flex-col space-y-3 w-full items-center">
                   <NavLink to="/">
-                    <Button>Accueil</Button>
+                    <Button variant="ghost">Accueil</Button>
                   </NavLink>
                   <NavLink to="/about">
-                    <Button>À propos</Button>
+                    <Button variant="ghost">À propos</Button>
                   </NavLink>
                   <NavLink to="/timeline">
-                    <Button>Parcours</Button>
+                    <Button variant="ghost">Parcours</Button>
                   </NavLink>
                   {/* 
                   <Button className="w-2/4">Projets</Button>
