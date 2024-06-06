@@ -17,6 +17,6 @@ export { default as ViteJsIcon } from './Vite.js.svg';
 export { default as NotionIcon } from './Notion.svg';
 export { default as CommunicationIcon } from './Communication.svg';
 export { default as TeamIcon } from './Team.svg';
-export { default as MemoryIcon } from './Memory.svg';
+export { default as CookieIcon } from './Cookies.svg';
 export { default as OrganisationIcon } from './Organisation.svg';
 export { default as CuriosityIcon } from './Curiosity.svg';
