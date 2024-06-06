@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "name": "HTML\u00a05",
+    "alt": "Icône de HTML\u00a05",
+    "icon-mapping": "HTML5",
+    "type": "front"
+  },
+  {
+    "id": 2,
+    "name": "CSS\u00a03",
+    "alt": "Icône de CSS\u00a03",
+    "icon-mapping": "CSS3",
+    "type": "front"
+  },
+  {
+    "id": 3,
+    "name": "Javascript",
+    "alt": "Icône de Javascript",
+    "icon-mapping": "JavaScript",
+    "type": "back"
+  },
+  {
+    "id": 4,
+    "name": "Typescript",
+    "alt": "Icône de Typescript",
+    "icon-mapping": "TypeScript",
+    "type": "front"
+  },
+  {
+    "id": 5,
+    "name": "Express",
+    "alt": "Icône de Express",
+    "icon-mapping": "Express",
+    "type": "back"
+  },
+  {
+    "id": 6,
+    "name": "Figma",
+    "alt": "Icône de Figma",
+    "icon-mapping": "Figma",
+    "type": "outil"
+  },
+  {
+    "id": 7,
+    "name": "GitHub",
+    "alt": "Icône de GitHub",
+    "icon-mapping": "GitHub",
+    "type": "outil"
+  },
+  {
+    "id": 8,
+    "name": "Node.js",
+    "alt": "Icône de Node.js",
+    "icon-mapping": "Node.js",
+    "type": "back"
+  },
+  {
+    "id": 9,
+    "name": "PostgreSQL",
+    "alt": "Icône de PostgreSQL",
+    "icon-mapping": "PostgreSQL",
+    "type": "back"
+  },
+  {
+    "id": 10,
+    "name": "React",
+    "alt": "Icône de React",
+    "icon-mapping": "React",
+    "type": "front"
+  },
+  {
+    "id": 11,
+    "name": "Sass",
+    "alt": "Icône de Sass",
+    "icon-mapping": "Sass",
+    "type": "front"
+  },
+  {
+    "id": 12,
+    "name": "Sequelize",
+    "alt": "Icône de Sequelize",
+    "icon-mapping": "Sequelize",
+    "type": "back"
+  },
+  {
+    "id": 13,
+    "name": "Tailwind CSS",
+    "alt": "Icône de Tailwind CSS",
+    "icon-mapping": "Tailwind CSS",
+    "type": "front"
+  },
+  {
+    "id": 14,
+    "name": "Trello",
+    "alt": "Icône de Trello",
+    "icon-mapping": "Trello",
+    "type": "outil"
+  },
+  {
+    "id": 15,
+    "name": "VSCode",
+    "alt": "Icône de VSCode",
+    "icon-mapping": "VSCode",
+    "type": "outil"
+  },
+  {
+    "id": 16,
+    "name": "Vite.js",
+    "alt": "Icône de Vite.js",
+    "icon-mapping": "Vite.js",
+    "type": "front"
+  },
+  {
+    "id": 17,
+    "name": "Notion",
+    "alt": "Icône de Notion",
+    "icon-mapping": "Notion",
+    "type": "outil"
+  },
+  {
+    "id": 18,
+    "name": "Organisation",
+    "alt": "Icône représentant l\u2019organisation",
+    "icon-mapping": "Organisation",
+    "type": "soft-skill"
+  },
+  {
+    "id": 19,
+    "name": "Mémoire",
+    "alt": "Icône représentant la mémoire",
+    "icon-mapping": "Memory",
+    "type": "soft-skill"
+  },
+  {
+    "id": 20,
+    "name": "Communication",
+    "alt": "Icône représentant la communication",
+    "icon-mapping": "Communication",
+    "type": "soft-skill"
+  },
+  {
+    "id": 20,
+    "name": "Curiosité",
+    "alt": "Icône représentant la curiosité",
+    "icon-mapping": "Curiosity",
+    "type": "soft-skill"
+  },
+  {
+    "id": 20,
+    "name": "Esprit d\u2019équipe",
+    "alt": "Icône représentant l\u2019organisation",
+    "icon-mapping": "Team",
+    "type": "soft-skill"
+  }
+  
+]
