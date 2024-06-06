@@ -1,0 +1,131 @@
+[
+    {
+    "id": 1,
+    "type": "training",
+    "startMonth": "septembre",
+    "startYear": 2024,
+    "endMonth": "décembre",
+    "endYear": 2025,
+    "location": "Wild Code School",
+    "city": "Paris",
+    "zipcode": 75000,
+    "position": "Formation développeur fullstack JS en alternance",
+    "diploma": "",
+    "yearOfGraduation": "",
+    "details": {
+      "positionType": "formation",
+      "positionDescription": "Formation en alternance de 15 mois en vue de l\u2019obtention du titre professionnel \u00ab\u00a0Concepteur et développeur d\u2019applications\u00a0\u00bb (équivalent à un bac\u00a0+3/+4)."
+    }
+  },
+  
+  {
+    "id": 2,
+    "type": "training",
+    "startMonth": "octobre",
+    "startYear": 2023,
+    "endMonth": "avril",
+    "endYear": 2024,
+    "location": "O\u2019Clock",
+    "city": "Paris",
+    "zipcode": 75000,
+    "position": "Formation développeur fullstack JS",
+    "diploma": "Titre professionnel \u00ab\u00a0Développeur web et web mobile\u00a0\u00bb",
+    "yearOfGraduation": 2024,
+    "details": {
+      "positionType": "formation",
+      "positionDescription": "Formation de 6 mois à temps plein en vue de l'obtention du titre professionnel \u00ab\u00a0Développeur web et web mobile\u00a0\u00bb (équivalent à un bac\u00a0+2)."
+    }
+  },
+    {
+    "id": 3,
+    "type": "training",
+    "startMonth": "avril",
+    "startYear": 2022,
+    "endMonth": "avril",
+    "endYear": 2022,
+    "location": "Gobelins Paris",
+    "city": "Paris",
+    "zipcode": 75019,
+    "position": "Gestion de projets digitaux",
+    "diploma": "",
+    "yearOfGraduation": 2024,
+    "details": {
+      "positionType": "formation",
+      "positionDescription": "Découverte des fondamentaux de la gestion de projets digitaux."
+    }
+  },
+  {
+    "id": 4,
+    "type": "work",
+    "startMonth": "septembre",
+    "startYear": 2019,
+    "endMonth": "avril",
+    "endYear": 2024,
+    "location": "mot.tiff inside",
+    "city": "Paris",
+    "zipcode": 75004,
+    "position": "Cheffe de projets multilingues et digitaux",
+    "graduation": "",
+    "yearOfGraduation": "",
+    "details": {
+      "positionType": "CDI",
+      "positionDescription": "Gestion de projets éditoriaux et digitaux multilingues."
+    }
+  },
+  {
+    "id": 5,
+    "type": "training",
+    "startMonth": "septembre",
+    "startYear": 2016,
+    "endMonth": "octobre",
+    "endYear": 2018,
+    "location": "ISIT",
+    "city": "Arcueil",
+    "zipcode": 94110,
+    "position": "Master\u00a01\u00a0&\u00a02 Communication interculturelle et traduction",
+    "graduation": "Master \u00ab\u00a0Communication Interculturelle et Traduction\u00a0\u00bb",
+    "yearOfGraduation": "",
+    "details": {
+      "positionType": "formation initiale",
+      "positionDescription": "Parcours \u00ab\u00a0Communication\u00a0\u00bb. Traduction généraliste et spécialisée."
+    }
+    
+  },
+    {
+    "id": 6,
+    "type": "training",
+    "startMonth": "septembre",
+    "startYear": 2017,
+    "endMonth": "octobre",
+    "endYear": 2018,
+    "location": "Université Paris Diderot",
+    "city": "Paris",
+    "zipcode": 75010,
+    "position": "Master 2 Industrie de la langue et traduction spécialisée\u00a0",
+    "graduation": "Master \u00ab\u00a0Industrie de la langue et traduction spécialisée\u00a0\u00bb",
+    "yearOfGraduation": "",
+    "details": {
+      "positionType": "formation initiale",
+      "positionDescription": ""
+    }
+    
+  },
+  {
+    "id": 7,
+    "type": "work",
+    "startMonth": "septembre",
+    "startYear": 2017,
+    "endMonth": "octobre",
+    "endYear": 2018,
+    "location": "Ministère de l\u2019économie et des finances",
+    "city": "Paris",
+    "zipcode": 75014,
+    "position": "Assistante linguistique spécialisée en TAO",
+    "graduation": "",
+    "yearOfGraduation": "",
+    "details": {
+      "positionType": "alternance",
+      "positionDescription": "Alternance d\u2019un an au Centre de traduction du ministère de l\u2019économie et des finances. Traduction de documents administratifs à l\u2019aide d\u2019un logiciel de traduction assistée par ordinateur. Gestion et mise à jour des mémoires de traduction."
+    }
+  }
+]
