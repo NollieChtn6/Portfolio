@@ -48,10 +48,9 @@ function Header() {
                   <NavLink to="/skills">
                     <Button variant="ghost">Compétences</Button>
                   </NavLink>
-                  {/* 
-                  <Button className="w-2/4">Projets</Button>
-                  <Button className="w-2/4">Sandbox</Button>
-                  <Button className="w-2/4">Contact</Button> */}
+                  <NavLink to="/projects">
+                    <Button variant="ghost">Projets</Button>
+                  </NavLink>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
@@ -70,7 +69,9 @@ function Header() {
           <NavLink to="/skills">
             <Button>Compétences</Button>
           </NavLink>
-          <Button className="">Projets</Button>
+          <NavLink to="/projects">
+            <Button>Projets</Button>
+          </NavLink>
           {/* <Button className="">Contact</Button> */}
         </div>
       </div>
