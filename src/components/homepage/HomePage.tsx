@@ -19,7 +19,7 @@ function HomePage() {
             code.
             <br /> Bienvenue sur mon portfolio&nbsp;!
           </p>
-          <div className="homepage-btns-container flex justify-evenly w-full md:w-3/4 self-center">
+          <div className="homepage-btns-container flex justify-evenly w-full md:w-[60%]">
             <NavLink to="/about">
               <Button>À propos</Button>
             </NavLink>
