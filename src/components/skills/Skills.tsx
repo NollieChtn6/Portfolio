@@ -24,7 +24,7 @@ import {
   NotionIcon,
   CommunicationIcon,
   TeamIcon,
-  MemoryIcon,
+  CookieIcon,
   OrganisationIcon,
   CuriosityIcon,
 } from '../../assets/skills_icons';
@@ -50,7 +50,7 @@ function Skills() {
     Notion: NotionIcon,
     Communication: CommunicationIcon,
     Team: TeamIcon,
-    Memory: MemoryIcon,
+    Cookie: CookieIcon,
     Organisation: OrganisationIcon,
     Curiosity: CuriosityIcon,
   };
