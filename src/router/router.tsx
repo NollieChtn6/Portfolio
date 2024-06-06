@@ -4,6 +4,7 @@ import App from '../App';
 import HomePage from '../components/homepage/HomePage';
 import About from '../components/about/About';
 import Timeline from '../components/timeline/Timeline';
+import Skills from '../components/skills/Skills';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: '/about', element: <About /> },
       { path: '/timeline', element: <Timeline /> },
+      { path: '/skills', element: <Skills /> },
     ],
   },
 ]);
