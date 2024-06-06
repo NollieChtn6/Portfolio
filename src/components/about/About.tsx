@@ -35,7 +35,6 @@ function About() {
             <NavLink to="/timeline">
               <Button>Parcours</Button>
             </NavLink>
-            <div className="separator v-m" />
             <NavLink to="/projects">
               <Button>Projets</Button>
             </NavLink>
