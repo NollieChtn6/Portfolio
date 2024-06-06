@@ -45,6 +45,9 @@ function Header() {
                   <NavLink to="/timeline">
                     <Button variant="ghost">Parcours</Button>
                   </NavLink>
+                  <NavLink to="/skills">
+                    <Button variant="ghost">Compétences</Button>
+                  </NavLink>
                   {/* 
                   <Button className="w-2/4">Projets</Button>
                   <Button className="w-2/4">Sandbox</Button>
@@ -64,8 +67,10 @@ function Header() {
           <NavLink to="/timeline">
             <Button>Parcours</Button>
           </NavLink>
+          <NavLink to="/skills">
+            <Button>Compétences</Button>
+          </NavLink>
           <Button className="">Projets</Button>
-          <Button className="">Sandbox</Button>
           {/* <Button className="">Contact</Button> */}
         </div>
       </div>
