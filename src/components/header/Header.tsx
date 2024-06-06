@@ -36,9 +36,13 @@ function Header() {
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
                 <SheetDescription className="flex flex-col space-y-6 w-full items-center">
-                  <Button className="w-2/4">Accueil</Button>
-                  {/* <Button className="w-2/4">À propos</Button>
-                  <Button className="w-2/4">Parcours</Button>
+                  <NavLink to="/">
+                    <Button>Accueil</Button>
+                  </NavLink>
+                  <NavLink to="/about">
+                    <Button>À propos</Button>
+                  </NavLink>
+                  {/* <Button className="w-2/4">Parcours</Button>
                   <Button className="w-2/4">Projets</Button>
                   <Button className="w-2/4">Sandbox</Button>
                   <Button className="w-2/4">Contact</Button> */}
@@ -48,8 +52,12 @@ function Header() {
           </Sheet>
         </div>
         <div className="nav-btns-container flex max-md:hidden justify-end space-x-6">
-          <Button className="">Accueil</Button>
-          <Button className="">À propos</Button>
+          <NavLink to="/">
+            <Button>Accueil</Button>
+          </NavLink>
+          <NavLink to="/about">
+            <Button>À propos</Button>
+          </NavLink>
           <Button className="">Parcours</Button>
           <Button className="">Projets</Button>
           <Button className="">Sandbox</Button>
