@@ -27,7 +27,7 @@ function Timeline() {
           Parcours
         </h2>
       </div>
-      <div className="timeline-section-container flex flex-col w-full overflow-y-auto">
+      <div className="timeline-section-container flex flex-col w-full overflow-y-auto p-3">
         <VerticalTimeline className="flex-grow" lineColor="#d1d1d1">
           {timelineElements.map((element) => {
             const isWorkElement = element.type === 'work';
