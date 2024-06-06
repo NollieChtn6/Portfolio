@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": 1,
     "type": "training",
     "startMonth": "septembre",
@@ -36,7 +36,7 @@
       "positionDescription": "Formation de 6 mois à temps plein en vue de l'obtention du titre professionnel \u00ab\u00a0Développeur web et web mobile\u00a0\u00bb (équivalent à un bac\u00a0+2)."
     }
   },
-    {
+  {
     "id": 3,
     "type": "training",
     "startMonth": "avril",
@@ -91,7 +91,7 @@
     }
     
   },
-    {
+  {
     "id": 6,
     "type": "training",
     "startMonth": "septembre",
