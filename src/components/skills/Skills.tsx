@@ -1,8 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
-import { Button } from '../ui/button';
-
-import picture from '../../assets/profile_picture_colors(1).png';
 import skills from '../../data/skills.json';
 import {
   HTML5Icon,

@@ -133,7 +133,8 @@ module.exports = {
             visibility: "hidden",
           },
           "100%": {
-            width: "100%",
+            width: "70%",
+            visibility: "display",
           }
         },
         blink: {
@@ -173,7 +174,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "typing": "typing 3s steps(22), blink .7s infinite alternate",
+        "typing": "typing 3s steps(22), blink .5s step-end infinite alternate",
         "floating": "float 4s ease-in-out infinite",
         "flickering-xs": "flicker 1.5s infinite",
         "flickering-sm": "flicker 2s infinite",
