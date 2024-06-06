@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
 import { Download } from 'lucide-react';
 import { Button } from '../ui/button';
 import ScreenComponent from './screen/Screen';
