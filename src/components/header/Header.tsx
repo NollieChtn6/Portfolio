@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import { Menu } from 'lucide-react';
 import { Button } from '../ui/button';
 
@@ -11,13 +13,15 @@ import {
   SheetTrigger,
 } from '../ui/sheet';
 
+import logo from '../../assets/logo_nc6.png';
+
 function Header() {
   return (
     <header className="header-container flex h-32 items-center justify-between p-6">
-      <div className="title-container space-y-3 w-1/4 max-sm:2/4">
-        <p className="blog-title text-4xl max-sm:text-3xl text-woodsmoke-100">
-          NC6
-        </p>
+      <div className="title-container w-1/4 max-sm:2/4 p-">
+        <NavLink to="/">
+          <img src={logo} alt="Logo NC6" className="md:w-[60%]" />
+        </NavLink>
       </div>
       <div className="flex nav-container bg-rolling-stone-500 items-center w-3/4 max-sm:2/4 justify-end">
         <div className="sheet-container flex md:hidden">
