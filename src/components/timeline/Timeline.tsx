@@ -23,7 +23,7 @@ function Timeline() {
   return (
     <main className="flex flex-col md:flex-row h-screen overflow-hidden">
       <div className="flex w-full md:w-1/12 h-16 md:h-auto items-center justify-center">
-        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide">
+        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide font-mono">
           Parcours
         </h2>
       </div>

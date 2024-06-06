@@ -8,7 +8,7 @@ function HomePage() {
     <main className="homepage-container flex flex-col md:flex-row max-sm:overflow-y-scroll h-full">
       <div className="homepage-content-left flex flex-col md:flex-row w-full md:w-2/4">
         <div className="about-text-container text-woodsmoke-200 flex flex-col grow md:h-full  p-9 md:w-2/4 space-y-6 md:place-content-center">
-          <h1 className="text-woodsmoke-200 text-3xl md:text-4xl uppercase">
+          <h1 className="text-woodsmoke-200 text-3xl md:text-4xl uppercase font-mono">
             Noëllie Chatain Six
           </h1>
           <p className="hero-subtitle flex w-4/5 text-lg md:text-xl animate-typing overflow-hidden whitespace-nowrap font-mono border-r-4">

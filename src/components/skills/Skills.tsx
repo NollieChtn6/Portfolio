@@ -62,7 +62,7 @@ function Skills() {
   return (
     <main className="skills-container flex flex-col md:flex-row h-full overflow-hidden">
       <div className="skills-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center">
-        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide">
+        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide font-mono">
           Compétences
         </h2>
       </div>
