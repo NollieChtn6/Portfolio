@@ -22,7 +22,7 @@ function HomePage() {
           <h1 className="text-woodsmoke-200 text-3xl md:text-4xl uppercase font-mono">
             Noëllie Chatain Six
           </h1>
-          <p className="hero-subtitle flex w-[75%] text-sm md:text-xl animate-typing overflow-hidden whitespace-nowrap font-mono border-r-4">
+          <p className="hero-subtitle flex w-[75%] text-sm md:text-md xl:text-xl animate-typing overflow-hidden whitespace-nowrap font-mono border-r-4">
             Développeuse web junior
           </p>
           <p>
@@ -42,7 +42,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="homepage-content-right flex h-full p-9 md:w-2/4 place-content-center items-center">
+      <div className="homepage-content-right flex h-full p-3 md:p-9 md:w-2/4 place-content-center items-center">
         <ScreenComponent />
       </div>
     </main>
