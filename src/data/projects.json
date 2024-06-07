@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Crafted Treasures",
+    "slug": "crafted-treasures",
+    "summary": "Boutique en ligne de produits artisanaux",
+    "description": "Réalisation de l'interface graphique de la boutique en ligne Crafted Treasures, qui propose des produits artisanaux. L'objectif de ce projet était de créer une interface graphique responsive en utilisant uniquement du HTML et du CSS.",
+    "tags": ["HTML", "CSS"],
+    "githubUrl": "https://github.com/NollieChtn6/Crafted-Treasures",
+    "deploymentUrl": "",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Crafted-Treasures/main/result/Creafted_Treasures_final_result.png",
+    "illustrationAlt": "",
+    "sandbox": true
+  },
+  {
+    "id": 2,
+    "title": "Animated Screen",
+    "slug": "animated-screen",
+    "summary": "Un petit écran scintillant",
+    "description": "Réalisation de l'interface graphique de la boutique en ligne Crafted Treasures, qui propose des produits artisanaux. L'objectif de ce projet était de créer une interface graphique responsive en utilisant uniquement du HTML et du CSS.",
+    "tags": ["HTML", "CSS"],
+    "githubUrl": "https://github.com/NollieChtn6/Simple-Screen-Animation",
+    "deploymentUrl": "",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Simple-Screen-Animation/main/result/simple-screen-snimation_result.png",
+    "illustrationAlt": "",
+    "sandbox": true
+  },
+  {
+    "id": 3,
+    "title": "To Do List",
+    "slug": "basic-todo",
+    "summary": "Une to-do list basique pour découvrir la gestion des states avec React",
+    "description": "Réalisation de l'interface graphique de la boutique en ligne Crafted Treasures, qui propose des produits artisanaux. L'objectif de ce projet était de créer une interface graphique responsive en utilisant uniquement du HTML et du CSS.",
+    "tags": ["React", "CSS"],
+    "githubUrl": "https://github.com/NollieChtn6/Basic-Todo-List-Interface",
+    "deploymentUrl": "",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Basic-Todo-List-Interface/main/result/ToDo_List_Interface_final_result.png",
+    "illustrationAlt": "Interface de la to-do list, avec un formulaire et une liste de tâches",
+    "sandbox": true
+  }
+]
