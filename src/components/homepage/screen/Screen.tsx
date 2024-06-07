@@ -1,6 +1,6 @@
 function ScreenComponent() {
   return (
-    <div className="screen-container flex flex-col w-3/4 max-md:w-1/2 max-h-3/5 bg-[#0C0404] rounded-lg p-3 border-2 border-slate-400 overflow-y-scroll space-y-1 animate-floating md:max-w-[400px] md:max-h-[250px]">
+    <div className="screen-container flex flex-col w-3/4 max-md:max-h-[200px] max-md:w-[250px] max-h-3/5 bg-[#0C0404] rounded-lg p-3 border-2 border-slate-400 overflow-y-scroll space-y-1 animate-floating md:max-w-[400px] md:max-h-[250px]">
       <div className="line-tab0 flex w-2/4 h-[8px] space-x-2">
         <div className="item-function w-[42px] bg-[#1434A4] animate-flickering-lg" />
         <div className="item-variable w-[42px] bg-[#6495ED] animate-flickering-lg" />
