@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import { Menu } from 'lucide-react';
@@ -17,6 +18,7 @@ import logo from '../../assets/logo_nc6.png';
 function Header() {
   const { pathname } = useLocation();
   console.log('loc:', pathname);
+  const [sheetIsOpen, setSheetIsOpen] = useState(false);
 
   return (
     <header className="header-container flex h-32 items-center justify-between p-6">
@@ -27,7 +29,7 @@ function Header() {
       </div>
       <div className="flex nav-container items-center w-3/4 max-sm:2/4 justify-end">
         <div className="sheet-container flex md:hidden">
-          <Sheet>
+          <Sheet open={sheetIsOpen} onOpenChange={setSheetIsOpen}>
             <SheetTrigger>
               {' '}
               <Button className="flex bg-transparent justify-self-end w-[50px] p-0 ">
@@ -44,6 +46,7 @@ function Header() {
                       className={
                         pathname === '/' ? 'active-link w-[170px]' : 'w-[170px]'
                       }
+                      onClick={() => setSheetIsOpen(false)}
                     >
                       Accueil
                     </Button>
@@ -56,6 +59,7 @@ function Header() {
                           ? 'active-link w-[170px]'
                           : 'w-[170px]'
                       }
+                      onClick={() => setSheetIsOpen(false)}
                     >
                       À propos
                     </Button>
@@ -68,6 +72,7 @@ function Header() {
                           ? 'active-link w-[170px]'
                           : 'w-[170px]'
                       }
+                      onClick={() => setSheetIsOpen(false)}
                     >
                       Parcours
                     </Button>
@@ -80,6 +85,7 @@ function Header() {
                           ? 'active-link w-[170px]'
                           : 'w-[170px]'
                       }
+                      onClick={() => setSheetIsOpen(false)}
                     >
                       Compétences
                     </Button>
@@ -92,6 +98,7 @@ function Header() {
                           ? 'active-link w-[170px]'
                           : 'w-[170px]'
                       }
+                      onClick={() => setSheetIsOpen(false)}
                     >
                       Projets
                     </Button>
