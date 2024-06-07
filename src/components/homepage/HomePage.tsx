@@ -22,7 +22,7 @@ function HomePage() {
           <h1 className="text-woodsmoke-200 text-3xl md:text-4xl uppercase font-mono">
             Noëllie Chatain Six
           </h1>
-          <p className="hero-subtitle flex w-[75%] text-lg md:text-xl animate-typing overflow-hidden whitespace-nowrap font-mono border-r-4">
+          <p className="hero-subtitle flex w-[75%] text-md md:text-xl animate-typing overflow-hidden whitespace-nowrap font-mono border-r-4">
             Développeuse web junior
           </p>
           <p>
