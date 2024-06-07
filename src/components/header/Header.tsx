@@ -36,19 +36,29 @@ function Header() {
                 <SheetTitle>Menu</SheetTitle>
                 <SheetDescription className="flex flex-col space-y-3 w-full items-center">
                   <NavLink to="/">
-                    <Button variant="ghost">Accueil</Button>
+                    <Button variant="ghost" className="w-[170px]">
+                      Accueil
+                    </Button>
                   </NavLink>
                   <NavLink to="/about">
-                    <Button variant="ghost">À propos</Button>
+                    <Button variant="ghost" className="w-[170px]">
+                      À propos
+                    </Button>
                   </NavLink>
                   <NavLink to="/timeline">
-                    <Button variant="ghost">Parcours</Button>
+                    <Button variant="ghost" className="w-[170px]">
+                      Parcours
+                    </Button>
                   </NavLink>
                   <NavLink to="/skills">
-                    <Button variant="ghost">Compétences</Button>
+                    <Button variant="ghost" className="w-[170px]">
+                      Compétences
+                    </Button>
                   </NavLink>
                   <NavLink to="/projects">
-                    <Button variant="ghost">Projets</Button>
+                    <Button variant="ghost" className="w-[170px]">
+                      Projets
+                    </Button>
                   </NavLink>
                 </SheetDescription>
               </SheetHeader>
