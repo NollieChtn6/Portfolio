@@ -44,7 +44,7 @@ function About() {
           <img
             src={picture}
             alt="Une petite fille avec une corne de licorne, une tresse et des lunettes"
-            className="saturate-[60%] rounded-tl-[35%] rounded-br-[35%] border-4 border-royal-blue-400 brightness-75"
+            className="saturate-[60%] rounded-tl-[35%] rounded-br-[35%] border-4 border-royal-blue-400 brightness-75 md:max-w-[500px]"
           />
         </div>
       </div>
