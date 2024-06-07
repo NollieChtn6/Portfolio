@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import { Menu } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -15,6 +15,9 @@ import {
 import logo from '../../assets/logo_nc6.png';
 
 function Header() {
+  const { pathname } = useLocation();
+  console.log('loc:', pathname);
+
   return (
     <header className="header-container flex h-32 items-center justify-between p-6">
       <div className="title-container w-1/4 max-sm:2/4 p-">
@@ -36,27 +39,60 @@ function Header() {
                 <SheetTitle>Menu</SheetTitle>
                 <SheetDescription className="flex flex-col space-y-3 w-full items-center">
                   <NavLink to="/">
-                    <Button variant="ghost" className="w-[170px]">
+                    <Button
+                      variant="ghost"
+                      className={
+                        pathname === '/' ? 'active-link w-[170px]' : 'w-[170px]'
+                      }
+                    >
                       Accueil
                     </Button>
                   </NavLink>
                   <NavLink to="/about">
-                    <Button variant="ghost" className="w-[170px]">
+                    <Button
+                      variant="ghost"
+                      className={
+                        pathname === '/about'
+                          ? 'active-link w-[170px]'
+                          : 'w-[170px]'
+                      }
+                    >
                       À propos
                     </Button>
                   </NavLink>
                   <NavLink to="/timeline">
-                    <Button variant="ghost" className="w-[170px]">
+                    <Button
+                      variant="ghost"
+                      className={
+                        pathname === '/timeline'
+                          ? 'active-link w-[170px]'
+                          : 'w-[170px]'
+                      }
+                    >
                       Parcours
                     </Button>
                   </NavLink>
                   <NavLink to="/skills">
-                    <Button variant="ghost" className="w-[170px]">
+                    <Button
+                      variant="ghost"
+                      className={
+                        pathname === '/skills'
+                          ? 'active-link w-[170px]'
+                          : 'w-[170px]'
+                      }
+                    >
                       Compétences
                     </Button>
                   </NavLink>
                   <NavLink to="/projects">
-                    <Button variant="ghost" className="w-[170px]">
+                    <Button
+                      variant="ghost"
+                      className={
+                        pathname === '/projects'
+                          ? 'active-link w-[170px]'
+                          : 'w-[170px]'
+                      }
+                    >
                       Projets
                     </Button>
                   </NavLink>
@@ -67,19 +103,29 @@ function Header() {
         </div>
         <div className="nav-btns-container flex max-md:hidden justify-end space-x-6">
           <NavLink to="/">
-            <Button>Accueil</Button>
+            <Button className={pathname === '/' ? 'active-link' : ''}>
+              Accueil
+            </Button>
           </NavLink>
           <NavLink to="/about">
-            <Button>À propos</Button>
+            <Button className={pathname === '/about' ? 'active-link' : ''}>
+              À propos
+            </Button>
           </NavLink>
           <NavLink to="/timeline">
-            <Button>Parcours</Button>
+            <Button className={pathname === '/timeline' ? 'active-link' : ''}>
+              Parcours
+            </Button>
           </NavLink>
           <NavLink to="/skills">
-            <Button>Compétences</Button>
+            <Button className={pathname === '/skills' ? 'active-link' : ''}>
+              Compétences
+            </Button>
           </NavLink>
           <NavLink to="/projects">
-            <Button>Projets</Button>
+            <Button className={pathname === '/projects' ? 'active-link' : ''}>
+              Projets
+            </Button>
           </NavLink>
           {/* <Button className="">Contact</Button> */}
         </div>
