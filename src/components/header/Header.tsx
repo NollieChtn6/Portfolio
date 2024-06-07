@@ -17,7 +17,6 @@ import logo from '../../assets/logo_nc6.png';
 
 function Header() {
   const { pathname } = useLocation();
-  console.log('loc:', pathname);
   const [sheetIsOpen, setSheetIsOpen] = useState(false);
 
   return (
