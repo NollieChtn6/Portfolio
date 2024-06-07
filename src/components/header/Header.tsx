@@ -18,6 +18,7 @@ import logo from '../../assets/logo_nc6.png';
 function Header() {
   // Source code for updating style on active nav likns : https://larainfo.com/blogs/react-router-active-navlink-with-tailwind-css/
   const { pathname } = useLocation();
+  // Source code I drew inspiration from to close sheet component on click: https://codesandbox.io/p/sandbox/upbeat-galileo-6rxfm7?file=%2Fsrc%2FApp.tsx%3A68%2C18-68%2C40
   const [sheetIsOpen, setSheetIsOpen] = useState(false);
 
   return (
