@@ -16,6 +16,7 @@ import {
 import logo from '../../assets/logo_nc6.png';
 
 function Header() {
+  // Source code for updating style on active nav likns : https://larainfo.com/blogs/react-router-active-navlink-with-tailwind-css/
   const { pathname } = useLocation();
   const [sheetIsOpen, setSheetIsOpen] = useState(false);
 
