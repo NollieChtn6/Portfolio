@@ -2,10 +2,12 @@ import { Download } from 'lucide-react';
 import { Button } from '../ui/button';
 import ScreenComponent from './screen/Screen';
 
+import cv from '../../assets/CHATAIN_SIX_CV_2024.pdf';
+
 function HomePage() {
   // Source code from: https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/
   const onButtonClick = () => {
-    fetch('../../assets/CHATAIN_SIX_CV_2024.pdf').then((response) => {
+    fetch(cv).then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         const alink = document.createElement('a');
