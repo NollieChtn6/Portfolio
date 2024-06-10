@@ -37,5 +37,18 @@
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Basic-Todo-List-Interface/main/result/ToDo_List_Interface_final_result.png",
     "illustrationAlt": "Interface de la to-do list, avec un formulaire et une liste de tâches",
     "sandbox": true
+  },
+  {
+    "id": 4,
+    "title": "Potato's Blog",
+    "slug": "potatos-blog",
+    "summary": "Le blog du chat, Patate",
+    "description": "Création d'une interface graphique permettant d'afficher les articles d'un blog (la partie back-end de ce projet est également disponible sur GitHub) et les catégories associées.",
+    "tags": ["React", "Tailwind CSS", "Typescript", "React Router", "Shadcn/ui"],
+    "githubUrl": "https://github.com/NollieChtn6/Potato-s-Blog",
+    "deploymentUrl": "",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Potato-s-Blog/main/src/assets/result/potatos_blog_final_result.png",
+    "illustrationAlt": "Interface du blog de Patate",
+    "sandbox": false
   }
 ]
