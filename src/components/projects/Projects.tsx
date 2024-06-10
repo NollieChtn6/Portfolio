@@ -21,7 +21,7 @@ function Projects() {
         </h2>
       </div>
       <div className="projects-content flex flex-col w-full h-full p-3 items-center space-y-6 overflow-hidden">
-        <div className="w-full h-[100px] px-3 place">
+        <div className="w-full h-[50px] px-3 max-sm:hidden md:display">
           <div className="flex items-center space-x-2 h-full justify-end">
             <Label
               htmlFor="display-sandbox-projects"
@@ -35,7 +35,7 @@ function Projects() {
             />
           </div>
         </div>
-        <div className="projects-list flex flex-col grow md:flex-row md:flex-wrap p-3 items-center justify-evenly md:justify-evenly overflow-y-auto w-full">
+        <div className="projects-list flex flex-col grow md:flex-row md:flex-wrap p-3 md:justify-evenly max-md:items-center overflow-y-auto h-full w-full bg-slate-100 ">
           {displaySandboxOnly
             ? sandboxProjects.map((project) => {
                 return <ProjectElement key={project.id} project={project} />;
