@@ -9,7 +9,7 @@ interface ProjectProps {
 
 function ProjectElement({ project }: ProjectProps) {
   return (
-    <div className="project-element-container h-[425px] w-[325px] bg-gradient-to-b from-slate-900 to-royal-blue-900 rounded-lg p-6 space-y-3 my-3 mx-3 border-2 border-royal-blue-700 ">
+    <div className="project-element-container h-[425px] w-[325px] bg-gradient-to-b from-slate-900 to-royal-blue-900 rounded-lg p-6 space-y-3 my-3 md:mx-3 border-2 border-royal-blue-700 shadow-md">
       <div className="project-element-header flex h-[10%] justify-center items-center">
         <h3 className="text-xl font-mono font-semibold text-woodsmoke-200">
           {project.title}
