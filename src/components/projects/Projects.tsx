@@ -35,7 +35,7 @@ function Projects() {
             />
           </div>
         </div>
-        <div className="projects-list flex flex-col grow md:flex-row md:flex-wrap p-3 md:justify-evenly max-md:items-center overflow-y-auto h-full w-full bg-slate-100 ">
+        <div className="projects-list flex flex-col grow md:flex-row md:flex-wrap p-3 md:justify-evenly max-md:items-center overflow-y-auto h-full w-full">
           {displaySandboxOnly
             ? sandboxProjects.map((project) => {
                 return <ProjectElement key={project.id} project={project} />;
