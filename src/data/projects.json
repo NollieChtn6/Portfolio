@@ -2,35 +2,51 @@
   {
     "id": 1,
     "title": "Crafted Treasures",
+    "isComplete": true,
     "slug": "crafted-treasures",
-    "summary": "Boutique en ligne de produits artisanaux",
-    "description": "Réalisation de l'interface graphique de la boutique en ligne Crafted Treasures, qui propose des produits artisanaux. L'objectif de ce projet était de créer une interface graphique responsive en utilisant uniquement du HTML et du CSS.",
+    "summary": "Découverte de flexbox et de la mise en page responsive",
+    "description": "Pour ce tout premier projet de ma (courte) carrière dans le développement, je découvre les bases du développement front-end et la mise en page responsive en réalisant la page d'accueil d'une boutique (fictive) de produits artisanaux. L'objectif de ce projet était d'apprendre à positionner correctement les éléments sur l'interface en fonction de la taille de l'écran et en n'utilisant que du HTML et du CSS.",
+    "tasks": [
+      "Création de l'interface client",
+      "Gestion du responsive à l'aide des media queries"
+    ],
     "tags": ["HTML", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Crafted-Treasures",
     "deploymentUrl": "",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Crafted-Treasures/main/result/Creafted_Treasures_final_result.png",
-    "illustrationAlt": "",
+    "illustrationAlt": "Page d'accueil de la boutique en ligne Crafted Treasures",
     "sandbox": true
   },
   {
     "id": 2,
     "title": "Animated Screen",
+    "isComplete": true,
     "slug": "animated-screen",
-    "summary": "Un petit écran scintillant",
-    "description": "Réalisation de l'interface graphique de la boutique en ligne Crafted Treasures, qui propose des produits artisanaux. L'objectif de ce projet était de créer une interface graphique responsive en utilisant uniquement du HTML et du CSS.",
+    "summary": "Découverte des animations CSS",
+    "description": "Ce petit projet m'a permis de m'amuser en découvrant les animations CSS. Truffé de détails, l'écran est en fait une imbrication complexe de <div> qui s'assemblent pour former une double interface : un navigateur d'un côté et un IDE de l'autre.",
+    "tasks": [
+      "Création de l'interface client",
+      "Gestion des animations avec les keyframes de CSS"
+    ],
     "tags": ["HTML", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Simple-Screen-Animation",
     "deploymentUrl": "",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Simple-Screen-Animation/main/result/simple-screen-snimation_result.png",
-    "illustrationAlt": "",
+    "illustrationAlt": "Interface principale de l'application représsentant un petit écran animé et scintillant",
     "sandbox": true
   },
   {
     "id": 3,
     "title": "To Do List",
+    "isComplete": true,
     "slug": "basic-todo",
     "summary": "Une to-do list basique pour découvrir la gestion des states avec React",
-    "description": "Réalisation de l'interface graphique de la boutique en ligne Crafted Treasures, qui propose des produits artisanaux. L'objectif de ce projet était de créer une interface graphique responsive en utilisant uniquement du HTML et du CSS.",
+    "description": "Cette to-do list simplifiée permet de créer, modifier, supprimer des tâches et de les marquer comme terminées en manipulant le hook useState de React. À noter, elle ne prend pas  en charge la persistence des données. Une version 2.0 devrait arriver prochainement.",
+    "tasks": [
+      "Création de l'interface client",
+      "Gestion de la liste des tâches à l'aide du state de React",
+      "Mise en place des fonctionnalités de création, de modification et de suppression d'une tâche."
+    ],
     "tags": ["React", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Basic-Todo-List-Interface",
     "deploymentUrl": "",
@@ -41,14 +57,49 @@
   {
     "id": 4,
     "title": "Potato's Blog",
+    "isComplete": false,
     "slug": "potatos-blog",
-    "summary": "Le blog du chat, Patate",
+    "summary": "Une interface de blog et son API",
     "description": "Création d'une interface graphique permettant d'afficher les articles d'un blog (la partie back-end de ce projet est également disponible sur GitHub) et les catégories associées.",
-    "tags": ["React", "Tailwind CSS", "Typescript", "React Router", "Shadcn/ui"],
+    "tasks": [
+      "Conceptualisation et création d'une base de données avec PostgreSQL",
+      "Création de l'interface client",
+      "Mise en place du routeur à l'aide de React Router DOM",
+      "Utilisation du hook useContext de React pour stocker la liste des articles et y accéder à différents endroits de l'application"
+    ],
+    "tags": [
+      "React",
+      "Tailwind CSS",
+      "Typescript",
+      "React Router",
+      "Shadcn/ui",
+      "Node.js",
+      "SQL",
+      "PostgreSQL"
+    ],
     "githubUrl": "https://github.com/NollieChtn6/Potato-s-Blog",
     "deploymentUrl": "",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Potato-s-Blog/main/src/assets/result/potatos_blog_final_result.png",
     "illustrationAlt": "Interface du blog de Patate",
+    "sandbox": false
+  },
+  {
+    "id": 5,
+    "title": "Impostor Online Game",
+    "isComplete": false,
+    "slug": "impostor-game",
+    "summary": "Un petit jeu en ligne pour découvrir GraphQL",
+    "description": "Cette version en ligne de l'Imposteur est un projet à quatre mains. L'objectif était de découvrir GraphQL et de gérer les appels au back-end en utilisation les mutations, les souscriptions et les queries. Une partie des données est stockée dans un contexte React.",
+    "tasks": [
+      "Création de l'interface client",
+      "Mise en place du routeur et du système de redirection des joueurs",
+      "Mise en place des différentes fonctionnalités pour les joueurs (création et modification du profil, création d'une salle, partage du lien de la salle aux autres joueurs, etc."
+    ],
+    "tags": ["React", "Tailwind CSS", "Typescript", "Shadcn/ui", "GraphQL"],
+    "githubUrl": "https://github.com/antogyn/impostor-client",
+    "deploymentUrl": "https://impostor-client.vercel.app/",
+    "illustrationUrl": "https://raw.githubusercontent.com/antogyn/impostor-client/main/src/assets/result/impostor_final_result.png",
+    "illustrationAlt": "Page d'accueil du jeu Impostor Online Game",
     "sandbox": false
   }
 ]
