@@ -6,12 +6,14 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="app-container h-screen w-screen flex flex-col bg-custom-gradient">
-      <Header />
-      <Outlet />
-      <Footer />
-      {/* <ScreenSize /> */}
-    </div>
+    <body className="body h-screen w-screen flex flex-col bg-custom-gradient p-3">
+      <div className="app-container flex flex-col h-full w-full xl:max-w-[1280px] xl:self-center">
+        <Header />
+        <Outlet />
+        <Footer />
+        {/* <ScreenSize /> */}
+      </div>
+    </body>
   );
 }
 
