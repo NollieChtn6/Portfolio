@@ -21,7 +21,7 @@ function Projects() {
         </h2>
       </div>
       <div className="projects-content flex flex-col w-full h-full p-3 items-center space-y-6 overflow-hidden">
-        <div className="w-full h-[50px] px-3 max-sm:hidden md:display">
+        <div className="w-full h-[50px] px-3 max-md:hidden md:display">
           <div className="flex items-center space-x-2 h-full justify-end">
             <Label
               htmlFor="display-sandbox-projects"
