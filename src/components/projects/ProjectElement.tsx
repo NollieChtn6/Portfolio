@@ -32,7 +32,7 @@ function ProjectElement({ project }: ProjectProps) {
           <NavLink to={project.githubUrl}>
             <Button className="bg-royal-blue-400 w-[130px]">Code source</Button>
           </NavLink>
-          <NavLink to={project.githubUrl}>
+          <NavLink to={project.deploymentUrl}>
             <Button className="bg-royal-blue-400 w-[130px]">
               Voir le site
             </Button>
