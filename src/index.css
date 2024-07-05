@@ -2,8 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-.active-link {
+/* h1 {
+  @apply;
+} */
+h1 {
+  @apply text-royal-blue-400 text-3xl md:text-4xl uppercase font-mono;
+}
 
-  @apply border-b-4 border-royal-blue-300;
-  
+h2 {
+  @apply text-wild-sand-100 text-3xl p-6 uppercase font-mono;
+}
+
+h3 {
+  @apply text-wild-sand-100 text-3xl uppercase font-mono;
+}
+
+h4 {
+  @apply text-2xl font-medium text-grandis-300;
+}
+
+ul {
+  @apply text-wild-sand-100 leading-relaxed;
+}
+
+p {
+  @apply text-wild-sand-100 font-light leading-relaxed;
+}
+
+.page-title {
+  @apply md:rotate-180 md:[writing-mode:vertical-rl];
+}
+
+.active-link {
+  @apply border-b-4 border-mine-shaft-400;
+}
+
+.skills {
+  @apply flex flex-col rounded-md  bg-gradient-to-b from-mine-shaft-950 to-grandis-300 space-y-3 p-6;
+}
+
+.skill-name {
+  @apply flex self-center text-[0.7rem] text-mine-shaft-700 font-mono;
+}
+
+.social-network {
+  @apply max-md:hidden text-sm text-wild-sand-100;
 }
