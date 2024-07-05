@@ -12,7 +12,7 @@ function HomePage() {
         const fileURL = window.URL.createObjectURL(blob);
         const alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'CHATAIN_SIX_CV.pdf';
+        alink.download = 'CHATAIN_SIX_Développeuse.pdf';
         alink.click();
       });
     });
