@@ -64,7 +64,7 @@ function ProjectDetails() {
             <h4 className="">Tâches prises en charge</h4>
             <ul>
               {selectedProject!.tasks.map((task) => {
-                return <li key={selectedProject!.id}>- {task}</li>;
+                return <li key={selectedProject!.id}>•&nbsp;{task}</li>;
               })}
             </ul>
           </div>
