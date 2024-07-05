@@ -5,16 +5,16 @@
     "isComplete": true,
     "slug": "crafted-treasures",
     "summary": "Découverte de flexbox et de la mise en page responsive",
-    "description": "Pour ce tout premier projet de ma (courte) carrière dans le développement, je découvre les bases du développement front-end et la mise en page responsive en réalisant la page d'accueil d'une boutique (fictive) de produits artisanaux. L'objectif de ce projet était d'apprendre à positionner correctement les éléments sur l'interface en fonction de la taille de l'écran et en n'utilisant que du HTML et du CSS.",
+    "description": "Pour ce tout premier projet de ma (courte) carrière dans le développement, je découvre les bases du développement front-end et la mise en page responsive en réalisant la page d\u2019accueil d\u2019une boutique (fictive) de produits artisanaux. L\u2019objectif de ce projet était d\u2019apprendre à positionner correctement les éléments sur l\u2019interface en fonction de la taille de l\u2019écran et en n\u2019utilisant que du HTML et du CSS.",
     "tasks": [
-      "Création de l'interface client",
-      "Gestion du responsive à l'aide des media queries"
+      "Création de l\u2019interface client",
+      "Gestion du responsive à l\u2019aide des media queries"
     ],
     "tags": ["HTML", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Crafted-Treasures",
     "deploymentUrl": "",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Crafted-Treasures/main/result/crafted_treasures_final_result.png",
-    "illustrationAlt": "Page d'accueil de la boutique en ligne Crafted Treasures",
+    "illustrationAlt": "Page d\u2019accueil de la boutique en ligne Crafted Treasures",
     "sandbox": true
   },
   {
@@ -23,16 +23,16 @@
     "isComplete": true,
     "slug": "animated-screen",
     "summary": "Découverte des animations CSS",
-    "description": "Ce petit projet m'a permis de m'amuser en découvrant les animations CSS. Truffé de détails, l'écran est en fait une imbrication complexe de <div> qui s'assemblent pour former une double interface : un navigateur d'un côté et un IDE de l'autre.",
+    "description": "Ce petit projet m\u2019a permis de m\u2019amuser en découvrant les animations CSS. Truffé de détails, l\u2019écran est en fait une imbrication complexe de <div> qui s\u2019assemblent pour former une double interface\u00a0: un navigateur d\u2019un côté et un IDE de l\u2019autre.",
     "tasks": [
-      "Création de l'interface client",
+      "Création de l\u2019interface client",
       "Gestion des animations avec les keyframes de CSS"
     ],
     "tags": ["HTML", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Simple-Screen-Animation",
     "deploymentUrl": "",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Simple-Screen-Animation/main/result/simple-screen-animation_result.png",
-    "illustrationAlt": "Interface principale de l'application représsentant un petit écran animé et scintillant",
+    "illustrationAlt": "Interface principale de l\u2019application représsentant un petit écran animé et scintillant",
     "sandbox": true
   },
   {
@@ -43,9 +43,9 @@
     "summary": "Une to-do list basique pour découvrir la gestion des states avec React",
     "description": "Cette to-do list simplifiée permet de créer, modifier, supprimer des tâches et de les marquer comme terminées en manipulant le hook useState de React. À noter, elle ne prend pas  en charge la persistence des données. Une version 2.0 devrait arriver prochainement.",
     "tasks": [
-      "Création de l'interface client",
-      "Gestion de la liste des tâches à l'aide du state de React",
-      "Mise en place des fonctionnalités de création, de modification et de suppression d'une tâche."
+      "Création de l\u2019interface client",
+      "Gestion de la liste des tâches à l\u2019aide du state de React",
+      "Mise en place des fonctionnalités de création, de modification et de suppression d\u2019une tâche."
     ],
     "tags": ["React", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Basic-Todo-List-Interface",
@@ -56,16 +56,16 @@
   },
   {
     "id": 4,
-    "title": "Potato's Blog",
+    "title": "Potato\u2019s Blog",
     "isComplete": false,
     "slug": "potatos-blog",
     "summary": "Une interface de blog et son API",
-    "description": "Création d'une interface graphique permettant d'afficher les articles d'un blog (la partie back-end de ce projet est également disponible sur GitHub) et les catégories associées.",
+    "description": "Création d\u2019une interface graphique permettant d\u2019afficher les articles d\u2019un blog (la partie back-end de ce projet est également disponible sur GitHub) et les catégories associées.",
     "tasks": [
-      "Conceptualisation et création d'une base de données avec PostgreSQL",
-      "Création de l'interface client",
-      "Mise en place du routeur à l'aide de React Router DOM",
-      "Utilisation du hook useContext de React pour stocker la liste des articles et y accéder à différents endroits de l'application"
+      "Conceptualisation et création d\u2019une base de données avec PostgreSQL",
+      "Création de l\u2019interface client",
+      "Mise en place du routeur à l\u2019aide de React Router DOM",
+      "Utilisation du hook useContext de React pour stocker la liste des articles et y accéder à différents endroits de l\u2019application"
     ],
     "tags": [
       "React",
@@ -89,17 +89,17 @@
     "isComplete": false,
     "slug": "impostor-game",
     "summary": "Un petit jeu en ligne pour découvrir GraphQL",
-    "description": "Cette version en ligne de l'Imposteur est un projet à quatre mains. L'objectif était de découvrir GraphQL et de gérer les appels au back-end en utilisation les mutations, les souscriptions et les queries. Une partie des données est stockée dans un contexte React.",
+    "description": "Cette version en ligne de l\u2019Imposteur est un projet à quatre mains. L\u2019objectif était de découvrir GraphQL et de gérer les appels au back-end en utilisation les mutations, les souscriptions et les queries. Une partie des données est stockée dans un contexte React.",
     "tasks": [
-      "Création de l'interface client",
+      "Création de l\u2019interface client",
       "Mise en place du routeur et du système de redirection des joueurs",
-      "Mise en place des différentes fonctionnalités pour les joueurs (création et modification du profil, création d'une salle, partage du lien de la salle aux autres joueurs, etc."
+      "Mise en place des différentes fonctionnalités pour les joueurs (création et modification du profil, création d\u2019une salle, partage du lien de la salle aux autres joueurs, etc."
     ],
     "tags": ["React", "Tailwind CSS", "Typescript", "Shadcn/ui", "GraphQL"],
     "githubUrl": "https://github.com/antogyn/impostor-client",
     "deploymentUrl": "https://impostor-client.vercel.app/",
     "illustrationUrl": "https://raw.githubusercontent.com/antogyn/impostor-client/main/src/assets/result/impostor_final_result.png",
-    "illustrationAlt": "Page d'accueil du jeu Impostor Online Game",
+    "illustrationAlt": "Page d\u2019accueil du jeu Impostor Online Game",
     "sandbox": false
   },
   {
@@ -107,13 +107,13 @@
     "title": "CoHabit App",
     "isComplete": true,
     "slug": "cohabit-app",
-    "summary": "Une app conçue pour gérer tous les aspects de la vie en colocation... au même endroit !",
-    "description": "Ce projet de fin de formation a été réalisé en équipe sur trois semaines, de la conceptualisation à la livraison d'un MVP en passant par le développement. Un travail d'équipe qui nous a permis de mettre en pratique notre apprentissage et de faire nos premiers pas dans le monde du développement !",
+    "summary": "Une app conçue pour gérer tous les aspects de la vie en colocation... au même endroit\u00a0!",
+    "description": "Ce projet de fin de formation a été réalisé sur trois semaines, de la conceptualisation à la livraison d\u2019un MVP en passant par le développement. Un travail d\u2019équipe qui nous a permis de mettre en pratique notre apprentissage et de faire nos premiers pas dans le monde du développement\u00a0!",
     "tasks": [
       "Rédaction des spécifications fonctionnelles et du cahier des charges",
       "Planification et suivi du développement en lien avec les méthodes agiles",
       "Création des interfaces client, statiques et dynamiques, avec React",
-      "Mise en place des formulaires d’authentification et de connexion",
+      "Mise en place des formulaires d\u2019authentification et de connexion",
       "Mise en place des fonctionnalités liées à la gestion des tâches"
     ],
     "tags": [
@@ -128,7 +128,7 @@
     "githubUrl": "https://github.com/O-clock-Kimchi/O-Coloc-front",
     "deploymentUrl": "https://o-coloc-front.onrender.com/",
     "illustrationUrl": "https://raw.githubusercontent.com/O-clock-Kimchi/O-Coloc-front/main/src/assets/result/cohabit_final_result.png",
-    "illustrationAlt": "Page d'accueil de CoHabit App",
+    "illustrationAlt": "Page d\u2019accueil de CoHabit App",
     "sandbox": false
   }
 ]
