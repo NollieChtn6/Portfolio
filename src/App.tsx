@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <body className="body h-screen w-screen flex flex-col bg-custom-gradient p-3">
+    <body className="body h-screen w-screen flex flex-col bg-[url('/background/circuit-primary.svg')] p-3">
       <div className="app-container flex flex-col h-full w-full xl:max-w-[1280px] xl:self-center">
         <Header />
         <Outlet />
