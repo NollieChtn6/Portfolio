@@ -9,7 +9,6 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from '../ui/sheet';
 
@@ -32,18 +31,17 @@ function Header() {
         <div className="sheet-container flex md:hidden">
           <Sheet open={sheetIsOpen} onOpenChange={setSheetIsOpen}>
             <SheetTrigger>
-              {' '}
               <Button className="flex bg-transparent justify-self-end w-[50px] p-0 ">
                 <Menu color="#f6f6f6" size={36} />
               </Button>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>Menu</SheetTitle>
-                <SheetDescription className="flex flex-col space-y-3 w-full items-center">
+                {/* <SheetTitle>Menu</SheetTitle> */}
+                <SheetDescription className="flex flex-col space-y-6 w-full items-center">
                   <NavLink to="/">
                     <Button
-                      variant="ghost"
+                      variant="mobile"
                       className={
                         pathname === '/' ? 'active-link w-[170px]' : 'w-[170px]'
                       }
@@ -54,7 +52,7 @@ function Header() {
                   </NavLink>
                   <NavLink to="/about">
                     <Button
-                      variant="ghost"
+                      variant="mobile"
                       className={
                         pathname === '/about'
                           ? 'active-link w-[170px]'
@@ -67,7 +65,7 @@ function Header() {
                   </NavLink>
                   <NavLink to="/timeline">
                     <Button
-                      variant="ghost"
+                      variant="mobile"
                       className={
                         pathname === '/timeline'
                           ? 'active-link w-[170px]'
@@ -80,7 +78,7 @@ function Header() {
                   </NavLink>
                   <NavLink to="/skills">
                     <Button
-                      variant="ghost"
+                      variant="mobile"
                       className={
                         pathname === '/skills'
                           ? 'active-link w-[170px]'
@@ -93,7 +91,7 @@ function Header() {
                   </NavLink>
                   <NavLink to="/projects">
                     <Button
-                      variant="ghost"
+                      variant="mobile"
                       className={
                         pathname === '/projects'
                           ? 'active-link w-[170px]'

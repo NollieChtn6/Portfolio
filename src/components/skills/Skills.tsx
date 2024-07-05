@@ -57,12 +57,10 @@ function Skills() {
   return (
     <main className="skills-container flex flex-col md:flex-row h-full overflow-hidden">
       <div className="skills-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center">
-        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide font-mono">
-          Compétences
-        </h2>
+        <h2 className="page-title">Compétences</h2>
       </div>
-      <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 overflow-y-scroll">
-        <div className="front-end-skills flex flex-col text-woodsmoke-200 rounded-md  bg-gradient-to-b from-slate-900 to-royal-blue-900 space-y-3 p-6">
+      <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 ">
+        <div className="skills front-end-skills">
           <h3 className="flex text-3xl font-mono justify-center items-center">
             Front-End
           </h3>
@@ -77,13 +75,13 @@ function Skills() {
                     src={iconMapping[skill['icon-mapping']]}
                     alt={skill.alt}
                   />
-                  <p className="self-center text-xs">{skill.name}</p>
+                  <p className="skill-name">{skill.name}</p>
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="back-end-skillsflex flex-col  text-woodsmoke-200 rounded-md  bg-gradient-to-b from-slate-900 to-royal-blue-900 space-y-3 p-6">
+        <div className="skills back-end-skills">
           <h3 className="flex text-3xl font-mono justify-center items-center">
             Back-End
           </h3>
@@ -98,13 +96,13 @@ function Skills() {
                     src={iconMapping[skill['icon-mapping']]}
                     alt={skill.alt}
                   />
-                  <p className="self-center text-xs">{skill.name}</p>
+                  <p className="skill-name">{skill.name}</p>
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="back-end-skillsflex flex-col text-woodsmoke-200 rounded-md  bg-gradient-to-b from-slate-900 to-royal-blue-900 space-y-3 p-6">
+        <div className="skills tools">
           <h3 className="flex text-3xl font-mono justify-center items-center">
             Outils
           </h3>
@@ -119,13 +117,13 @@ function Skills() {
                     src={iconMapping[skill['icon-mapping']]}
                     alt={skill.alt}
                   />
-                  <p className="self-center text-xs">{skill.name}</p>
+                  <p className="skill-name">{skill.name}</p>
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="back-end-skillsflex flex-col text-woodsmoke-200 rounded-md  bg-gradient-to-b from-slate-900 to-royal-blue-900 space-y-3 p-6">
+        <div className="skills soft-skills">
           <h3 className="flex text-3xl font-mono justify-center items-center">
             Soft Skills
           </h3>
@@ -140,7 +138,7 @@ function Skills() {
                     src={iconMapping[skill['icon-mapping']]}
                     alt={skill.alt}
                   />
-                  <p className="self-center text-xs">{skill.name}</p>
+                  <p className="skill-name">{skill.name}</p>
                 </div>
               );
             })}

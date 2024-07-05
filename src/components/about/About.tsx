@@ -2,19 +2,17 @@ import { NavLink } from 'react-router-dom';
 
 import { Button } from '../ui/button';
 
-import picture from '../../assets/profile_picture_colors(1).png';
+import picture from '../../assets/profile_picture_colors.png';
 
 function About() {
   return (
     <main className="about-container flex flex-col md:flex-row max-sm:overflow-y-scroll h-full">
       <div className="about-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center">
-        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide font-mono">
-          À propos de moi
-        </h2>
+        <h2 className="page-title">À propos de moi</h2>
       </div>
       <div className="about-content flex flex-col md:flex-row w-full h-[90%] md:h-full">
-        <div className="about-content-container text-woodsmoke-200 flex flex-col grow md:h-full p-9 md:p-6 md:w-2/4 space-y-6 md:place-content-center">
-          <p className="text-content text-md font-light">
+        <div className="about-content-container flex flex-col grow md:h-full p-9 md:p-6 md:w-2/4 space-y-6 md:place-content-center">
+          <p className="text-content">
             Contrairement à beaucoup, je ne suis pas &laquo;&nbsp;tombée dans la
             marmite&nbsp;&raquo; du développement informatique étant petite.
             Issue d&rsquo;une formation littéraire et linguistique, je suis
@@ -40,11 +38,11 @@ function About() {
             </NavLink>
           </div>
         </div>
-        <div className="about-img-container flex h-2/4 md:h-full p-9 md:w-2/4 max-sm:hidden place-content-center items-center">
+        <div className="about-img-container flex h-2/4 md:h-full p-9  md:w-2/4 place-content-center items-center">
           <img
             src={picture}
             alt="Une petite fille avec une corne de licorne, une tresse et des lunettes"
-            className="saturate-[60%] rounded-tl-[35%] rounded-br-[35%] border-4 border-royal-blue-400 brightness-75 md:max-w-[500px]"
+            className="rounded-tl-[35%] rounded-br-[35%] border-4 border-mine-shaft-500 brightness-80 md:max-w-[400px] max-md:h-[300px]"
           />
         </div>
       </div>

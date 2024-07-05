@@ -1,6 +1,6 @@
 import { useParams } from 'react-router';
 import { useNavigate, NavLink } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import projects from '../../data/projects.json';
 
 import { Button } from '../ui/button';
@@ -27,23 +27,23 @@ function ProjectDetails() {
             className="object-scale-down shadow-lg"
           />
         </div>
-        <div className="project-content-container text-woodsmoke-200 flex flex-col grow md:h-full p-9 md:p-6 md:w-2/4 space-y-6 md:place-content-center">
+        <div className="project-content-container flex flex-col grow md:h-full p-9 md:p-6 md:w-2/4 space-y-6 md:place-content-center">
           <Button onClick={() => navigate(-1)} variant="ghost" size="icon">
-            <ArrowLeft />
+            <ArrowLeft color="#ffcb74" />
           </Button>
           <div className="project-header flex space-x-6 items-baseline">
             <h3 className="project-title flex text-3xl uppercase font-mono">
               {selectedProject!.title}
             </h3>
-            <div className="project-status flex text-sm italic">
-              {selectedProject!.isComplete ? 'Terminé' : 'En cours'}{' '}
+            <div className="project-status flex text-sm italic text-royal-blue-400">
+              {selectedProject!.isComplete ? 'Terminé' : 'En cours'}
             </div>
           </div>
           <div className="tags flex self-start flex-wrap">
             {selectedProject?.tags.map((tag) => {
               return (
                 <div
-                  className="tag px-3 m-2 text-md rounded-md bg-royal-blue-500 text-woodsmoke-200 shadow-md shadow-royal-blue-950"
+                  className="tag px-3 m-2 text-md rounded-md bg-grandis-300 text-wild-sand-700 shadow-md shadow-wild-sand-700"
                   key={tag}
                 >
                   #{tag}
@@ -55,13 +55,13 @@ function ProjectDetails() {
             <p className="italic">{selectedProject!.summary}</p>
           </div>
           <div className="project-description">
-            <h4 className="text-2xl font-medium">Présentation du projet</h4>
+            <h4 className="">Présentation du projet</h4>
             <p className="text-content text-md font-light">
               {selectedProject!.description}
             </p>
           </div>
           <div className="tasks-list">
-            <h4 className="text-2xl font-medium">Tâches prises en charge</h4>
+            <h4 className="">Tâches prises en charge</h4>
             <ul>
               {selectedProject!.tasks.map((task) => {
                 return <li key={selectedProject!.id}>- {task}</li>;
@@ -74,21 +74,24 @@ function ProjectDetails() {
              items-center"
             >
               <NavLink to={selectedProject!.githubUrl}>
-                <Button className="bg-royal-blue-400 w-[130px]">
+                <Button size="cta" variant="outline">
                   Code source
+                  <ExternalLink className="ml-2" />
                 </Button>
               </NavLink>
               <NavLink to={selectedProject!.deploymentUrl}>
-                <Button className="bg-royal-blue-400 w-[130px]">
+                <Button size="cta" variant="outline">
                   Voir le site
+                  <ExternalLink className="ml-2" />
                 </Button>
               </NavLink>
             </div>
           ) : (
             <div className="project-element-footer flex h-[15%] justify-center items-center">
               <NavLink to={selectedProject!.githubUrl}>
-                <Button className="bg-royal-blue-400 w-[130px]">
+                <Button size="cta" variant="outline">
                   Code source
+                  <ExternalLink className="ml-2" />
                 </Button>
               </NavLink>
             </div>

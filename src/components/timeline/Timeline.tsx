@@ -17,16 +17,14 @@ import {
 import timelineElements from '../../data/data.json';
 
 function Timeline() {
-  const workIconStyles = { background: '#565c77', color: '#b5c0d0' };
-  const schoolIconStyles = { background: '#1c1a4c', color: '#b5c0d0' };
-  const arrowStyles = { borderRight: '7px solid  #1c1a4c' };
+  const workIconStyles = { background: '#e7e7e7', color: '#888888' };
+  const schoolIconStyles = { background: '#ffcb74', color: '#888888' };
+  const arrowStyles = { borderRight: '7px solid  #888888' };
 
   return (
     <main className="flex flex-col md:flex-row h-screen overflow-hidden">
       <div className="flex w-full md:w-1/12 h-16 md:h-auto items-center justify-center">
-        <h2 className="text-woodsmoke-200 md:rotate-180 md:[writing-mode:vertical-rl] text-3xl p-6 uppercase tracking-wide font-mono">
-          Parcours
-        </h2>
+        <h2 className="page-title">Parcours</h2>
       </div>
       <div className="timeline-section-container flex flex-col w-full overflow-y-auto p-3">
         <VerticalTimeline className="flex-grow" lineColor="#d1d1d1">
@@ -41,7 +39,7 @@ function Timeline() {
                 contentArrowStyle={arrowStyles}
               >
                 <div className="timeline-element-content">
-                  <h3 className="timeline-title">
+                  <h3 className="timeline-title text-3xl uppercase font-mono">
                     {element.location} • {element.city} ({element.zipcode})
                   </h3>
                   <p className="timeline-subtitle">

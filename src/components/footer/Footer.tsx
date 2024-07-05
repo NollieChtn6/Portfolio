@@ -16,7 +16,7 @@ function Footer() {
           title="To: LinkedIn profile"
         >
           <LinkedinIcon strokeWidth={1.5} color="#e7e7e7" />
-          <span className="max-md:hidden text-sm text-woodsmoke-100">
+          <span className="social-network max-md:hidden text-sm text-woodsmoke-100">
             LinkedIn
           </span>
         </a>
@@ -26,9 +26,7 @@ function Footer() {
           title="To: Github profile"
         >
           <Github strokeWidth={1.5} color="#e7e7e7" />
-          <span className="max-md:hidden text-sm text-woodsmoke-100">
-            Github
-          </span>
+          <span className="social-network">Github</span>
         </a>
       </div>
     </footer>
