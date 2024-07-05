@@ -50,7 +50,7 @@
     "tags": ["React", "CSS"],
     "githubUrl": "https://github.com/NollieChtn6/Basic-Todo-List-Interface",
     "deploymentUrl": "",
-    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Basic-Todo-List-Interface/main/result/ToDo_List_Interface_final_result.png",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Basic-Todo-List-Interface/main/result/todo_list_interface_final_result.png",
     "illustrationAlt": "Interface de la to-do list, avec un formulaire et une liste de tâches",
     "sandbox": true
   },
