@@ -26,8 +26,6 @@ module.exports = {
         900: '#2e2d82',
         950: '#1c1a4c',
       },
-
-      // new palette
       'cod-gray': {
         50: '#f6f6f6',
         100: '#e7e7e7',
@@ -89,11 +87,7 @@ module.exports = {
       },
     },
     extend: {
-      backgroundImage: {
-        'custom-gradient': `repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),
-                            repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),
-                            linear-gradient(90deg, hsl(194,74%,30%),hsl(266,74%,30%),hsl(338,74%,56%),hsl(50,74%,30%),hsl(122,74%,30%))`,
-      },
+      backgroundImage: {},
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
