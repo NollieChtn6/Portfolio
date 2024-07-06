@@ -27,7 +27,6 @@ import {
   AlertDialogTrigger,
 } from '../ui/alert-dialog';
 
-// import timelineElements from '../../data/data.json';
 import milestones from '../../data/milestones.json';
 
 function Timeline() {

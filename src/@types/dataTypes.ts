@@ -20,23 +20,42 @@ export interface SkillInterface {
   type: string;
 }
 
-export interface MilestoneDetailsInterface {
-  positionType: string;
-  positionDescription: string;
+export interface PositionDescription {
+  id: number;
+  title: string;
+  tasks: string[];
 }
 
-export interface MilestoneInterface {
+export interface MilestoneDetails {
+  positionType: string;
+  diploma?: string;
+  yearOfGraduation?: number;
+  positionDescription: PositionDescription[];
+}
+
+export interface MilestoneData {
   id: number;
-  type: string;
-  startMonth: string;
-  startYear: number;
-  endMonth: string;
-  endYear: number;
-  location: string;
-  city: string;
-  zipcode: number;
-  position: string;
-  diploma: string;
-  yearOfGraduation: string;
-  details: MilestoneDetailsInterface;
+  isEducation: 'true' | 'false';
+  fr: {
+    startMonth: string;
+    startYear: number;
+    endMonth: string;
+    endYear: number;
+    organisation: string;
+    city: string;
+    zipcode: number;
+    position: string;
+    details: MilestoneDetails;
+  };
+  en: {
+    startMonth: string;
+    startYear: number;
+    endMonth: string;
+    endYear: number;
+    organisation: string;
+    city: string;
+    zipcode: number;
+    position: string;
+    details: MilestoneDetails;
+  };
 }
