@@ -142,11 +142,11 @@
             "id": 1,
             "title": "Formation \u00ab\u00a0Développeur fullstack JS\u00a0\u00bb de 6 mois",
             "tasks": [
-              "Spécialisation en ReactJS",
               "Conceptualisation de projets de développement informatique",
               "Développement de la partie front-end d\u2019une application",
               "Développement de la partie back-end d\u2019une application",
-              "Création et gestion de bases de données"
+              "Création et gestion de bases de données",
+              "Spécialisation en ReactJS"
             ]
           }
         ]
