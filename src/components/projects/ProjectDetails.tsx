@@ -32,7 +32,7 @@ function ProjectDetails() {
             <ArrowLeft color="#ffcb74" />
           </Button>
           <div className="project-header flex space-x-6 items-baseline">
-            <h3 className="project-title flex text-3xl uppercase font-mono">
+            <h3 className="project-title flex text-3xl uppercase font-mono max-sm:hidden">
               {selectedProject!.title}
             </h3>
             <div className="project-status flex text-sm italic text-royal-blue-400">
@@ -74,24 +74,36 @@ function ProjectDetails() {
              items-center"
             >
               <NavLink to={selectedProject!.githubUrl}>
-                <Button size="cta" variant="outline">
+                <Button
+                  size="cta"
+                  variant="outline"
+                  className="max-sm:w-[120px]"
+                >
                   Code source
-                  <ExternalLink className="ml-2" />
+                  <ExternalLink className="ml-2 max-sm:hidden" />
                 </Button>
               </NavLink>
               <NavLink to={selectedProject!.deploymentUrl}>
-                <Button size="cta" variant="outline">
+                <Button
+                  size="cta"
+                  variant="outline"
+                  className="max-sm:w-[120px]"
+                >
                   Voir le site
-                  <ExternalLink className="ml-2" />
+                  <ExternalLink className="ml-2 max-sm:hidden" />
                 </Button>
               </NavLink>
             </div>
           ) : (
             <div className="project-element-footer flex h-[15%] justify-center items-center">
               <NavLink to={selectedProject!.githubUrl}>
-                <Button size="cta" variant="outline">
+                <Button
+                  size="cta"
+                  variant="outline"
+                  className="max-sm:w-[120px]"
+                >
                   Code source
-                  <ExternalLink className="ml-2" />
+                  <ExternalLink className="ml-2 max-sm:hidden" />
                 </Button>
               </NavLink>
             </div>
