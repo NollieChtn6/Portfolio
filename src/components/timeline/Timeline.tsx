@@ -40,7 +40,6 @@ function Timeline() {
 
   const handleClickOnDetails = (item: MilestoneData) => {
     setSelectedMilestone(item);
-    console.log(selectedMilestone);
   };
 
   const handleClickOnClose = () => {
