@@ -93,7 +93,7 @@
     "tasks": [
       "Création de l\u2019interface client",
       "Mise en place du routeur et du système de redirection des joueurs",
-      "Mise en place des différentes fonctionnalités pour les joueurs (création et modification du profil, création d\u2019une salle, partage du lien de la salle aux autres joueurs, etc."
+      "Mise en place des différentes fonctionnalités pour les joueurs (création et modification du profil, création d\u2019une salle, partage du lien de la salle aux autres joueurs, etc.)"
     ],
     "tags": ["React", "Tailwind CSS", "Typescript", "Shadcn/ui", "GraphQL"],
     "githubUrl": "https://github.com/antogyn/impostor-client",
