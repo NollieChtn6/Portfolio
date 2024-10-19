@@ -59,7 +59,7 @@ function Skills() {
       <div className="skills-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center">
         <h2 className="page-title">Compétences</h2>
       </div>
-      <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 max-lg:overflow-y-scroll">
+      <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 lg:overflow-y-scroll">
         <div className="skills front-end-skills">
           <h3 className="flex text-3xl font-mono justify-center items-center">
             Front-End
