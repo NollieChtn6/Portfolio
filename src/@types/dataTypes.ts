@@ -1,4 +1,4 @@
-export interface ProjectInterface {
+export type Projecttype = {
   id: number;
   title: string;
   slug: string;
@@ -10,32 +10,32 @@ export interface ProjectInterface {
   illustrationUrl: string;
   illustrationAlt: string;
   sandbox: boolean;
-}
+};
 
-export interface SkillInterface {
+export type Skilltype = {
   id: number;
   name: string;
   alt: string;
-  'icon-mapping': string;
+  "icon-mapping": string;
   type: string;
-}
+};
 
-export interface PositionDescription {
+export type PositionDescription = {
   id: number;
   title: string;
   tasks: string[];
-}
+};
 
-export interface MilestoneDetails {
+export type MilestoneDetails = {
   positionType: string;
   diploma?: string;
   yearOfGraduation?: number;
   positionDescription: PositionDescription[];
-}
+};
 
-export interface MilestoneData {
+export type MilestoneData = {
   id: number;
-  isEducation: 'true' | 'false';
+  isEducation: "true" | "false";
   fr: {
     startMonth: string;
     startYear: number;
@@ -58,4 +58,4 @@ export interface MilestoneData {
     position: string;
     details: MilestoneDetails;
   };
-}
+};
