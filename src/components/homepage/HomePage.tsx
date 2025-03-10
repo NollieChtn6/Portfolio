@@ -1,7 +1,7 @@
 import { Download } from "lucide-react";
 import { Button } from "../userinterface/button";
 import ScreenComponent from "./screen/Screen";
-import { downloadFile } from "@/utils/download";
+import { downloadFile } from "../../utils/downloadFile";
 
 import cv from "../../assets/CHATAIN_SIX_CV_2024.pdf";
 
