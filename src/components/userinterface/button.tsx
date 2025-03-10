@@ -5,7 +5,7 @@ export interface ButtonProps {
   children?: React.ReactNode;
   type: "button" | "submit";
   size?: "sm" | "md" | "lg";
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "icon";
   href?: string;
   className?: string;
   disabled?: boolean;
@@ -38,9 +38,9 @@ export function Button({
       "bg-wine-berry-950 hover:bg-wine-berry-800 enabled:hover:scale-105 disabled:bg-wine-berry-500 disabled:text-iron-50",
     secondary:
       "bg-firefly-600 hover:bg-firefly-400 enabled:hover:scale-105 disabled:bg-firefly-300 disabled:text-iron-50",
-    outline:
-      "border border-wine-berry-800 text-iron-50 enabled:hover:scale-105 hover:bg-wine-berry-300",
-    ghost: "text-blue-500",
+    outline: "border border-wine-berry-800 enabled:hover:scale-105 hover:bg-wine-berry-300",
+    ghost: "hover:scale-105",
+    icon: "hover:scale-105",
   };
 
   // About the clsx function: https://antondevtips.com/blog/conditional-class-rendering-in-react-using-clsx
