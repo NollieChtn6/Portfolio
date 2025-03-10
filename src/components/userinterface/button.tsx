@@ -2,7 +2,7 @@ import type React from "react";
 import clsx from "clsx";
 
 export interface ButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   type: "button" | "submit";
   size?: "sm" | "md" | "lg";
   variant?: "primary" | "secondary" | "outline" | "ghost";
@@ -10,7 +10,7 @@ export interface ButtonProps {
   className?: string;
   disabled?: boolean;
   icon?: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export function Button({
