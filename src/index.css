@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-  @apply text-wild-sand-100 text-3xl p-6 uppercase font-mono;
+  @apply text-iron-50 text-3xl p-6 uppercase font-mono;
 }
 
 h3 {
@@ -19,7 +19,7 @@ h4 {
 }
 
 h5 {
-  @apply text-wild-sand-100 text-lg font-semibold;
+  @apply text-iron-50 text-lg font-semibold;
 }
 
 ul {
@@ -48,4 +48,8 @@ p {
 
 .social-network {
   @apply max-md:hidden text-sm text-wild-sand-100;
+}
+
+html {
+  scrollbar-color: #888 transparent;
 }
