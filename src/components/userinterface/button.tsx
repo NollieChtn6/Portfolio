@@ -35,7 +35,7 @@ export function Button({
 
   const variantStyles = {
     primary:
-      "bg-wine-berry-950 hover:bg-wine-berry-800 enabled:hover:scale-105 disabled:bg-wine-berry-500 disabled:text-iron-50",
+      "bg-wine-berry-800 hover:bg-wine-berry-700 enabled:hover:scale-105 disabled:bg-wine-berry-500 disabled:text-iron-50",
     secondary:
       "bg-firefly-600 hover:bg-firefly-400 enabled:hover:scale-105 disabled:bg-firefly-300 disabled:text-iron-50",
     outline: "border border-wine-berry-800 enabled:hover:scale-105 hover:bg-wine-berry-300",
