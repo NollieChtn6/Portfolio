@@ -22,7 +22,7 @@ export default function Sheet({ isOpen, onClose }: SheetProps) {
     },
     {
       label: "Projets",
-      href: "/timeline",
+      href: "/projects",
     },
     {
       label: "Compétences",
