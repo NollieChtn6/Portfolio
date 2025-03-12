@@ -1,5 +1,6 @@
 import type React from "react";
 import clsx from "clsx";
+import { NavLink } from "react-router-dom";
 
 export interface ButtonProps {
   children?: React.ReactNode;
@@ -54,9 +55,9 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+      <NavLink to={href} target="" rel="" className={classes}>
         {icon} {children}
-      </a>
+      </NavLink>
     );
   }
 
