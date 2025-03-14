@@ -48,7 +48,7 @@ export default function Sheet({ isOpen, onClose }: SheetProps) {
       )}
 
       <aside
-        className={`z-50 fixed top-0 left-0 h-full w-screen sm:w-1/3 bg-iron-950 text-iron-50 shadow-lg p-4 transform transition-transform duration-300 space-y-12 ${
+        className={`z-50 fixed top-0 left-0 h-full w-screen md:w-1/5 bg-iron-950 text-iron-50 shadow-lg p-4 transform transition-transform duration-300 space-y-12 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -60,9 +60,15 @@ export default function Sheet({ isOpen, onClose }: SheetProps) {
           variant="icon"
         />
         <div className="mt-8">
-          <nav className="space-y-4">
+          <nav className="space-y-6 flex flex-col items-center">
             {NAV_LINKS.map((navLink) => (
-              <Button key={navLink.label} type="button" variant="secondary" href={navLink.href}>
+              <Button
+                key={navLink.label}
+                type="button"
+                variant="secondary"
+                href={navLink.href}
+                className="w-40"
+              >
                 {navLink.label}
               </Button>
             ))}
