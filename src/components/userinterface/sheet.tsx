@@ -48,7 +48,7 @@ export default function Sheet({ isOpen, onClose }: SheetProps) {
       )}
 
       <aside
-        className={`z-50 fixed top-0 left-0 h-full w-[20%] bg-iron-950 text-iron-50 shadow-lg p-6 transform transition-transform duration-300 rounded-r-lg space-y-12 ${
+        className={`z-50 fixed top-0 left-0 h-full w-screen sm:w-1/3 bg-iron-950 text-iron-50 shadow-lg p-4 transform transition-transform duration-300 space-y-12 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
