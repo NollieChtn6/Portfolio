@@ -1,8 +1,33 @@
 import { motion } from "framer-motion";
-import { Briefcase, University, CalendarDays } from "lucide-react";
-import milestones from "../../data/milestones.json";
+import { Briefcase, University, CalendarDays, ArrowRight } from "lucide-react";
+import data from "../../data/milestones.json";
+import Dialog from "./dialog";
+import { Button } from "./button";
+import { useState } from "react";
+import type { MilestoneData } from "@/@types/dataTypes";
 
 export default function VerticalTimeline() {
+  const milestones: MilestoneData[] = data as MilestoneData[];
+  const [selectedMilestone, setSelectedMilestone] = useState<MilestoneData | null>(null);
+
+  const milestoneIsEducationColors = {
+    primary: "persian-green-700",
+    secondary: "persian-green-500",
+  };
+
+  const milestoneIsNotEducationColors = {
+    primary: "hibiscus-700",
+    secondary: "hibiscus-500",
+  };
+
+  const handleOpenDetails = (milestone: MilestoneData): void => {
+    setSelectedMilestone(milestone);
+    console.log("Selected milestone:", milestone);
+  };
+  const handleCloseDetails = (): void => {
+    setSelectedMilestone(null);
+  };
+
   // TODO: Responsive design
   return (
     <div className="relative w-full max-w-4xl mx-auto p-6">
@@ -19,27 +44,55 @@ export default function VerticalTimeline() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className={`relative flex w-full ${isLeft ? "justify-start" : "justify-end"}`}
             >
-              <div className="milestone-card bg-iron-600 shadow-lg rounded-lg p-6 w-96 border border-iron-200 space-y-3">
-                <h3 className="text-xl font-semibold">{milestone.fr.organisation}</h3>
-                <p className="text-gray-600 text-lg">{milestone.fr.position}</p>
-                <p className="text-gray-500 flex items-center gap-2 text-sm">
+              <div className="milestone-card flex flex-col relative bg-iron-600 shadow-lg rounded-lg p-4 w-96 border border-iron-200 space-y-3">
+                <div className="dialog-header">
+                  <h3
+                    className={`text-xl font-semibold ${milestone.isEducation === "false" ? `text-${milestoneIsNotEducationColors.primary}` : `text-${milestoneIsEducationColors.primary}`}`}
+                  >
+                    {milestone.fr.organisation}
+                  </h3>
+                  <p
+                    className={`text-iron-50 text-lbase ${milestone.isEducation === "false" ? `text-${milestoneIsNotEducationColors.secondary}` : `text-${milestoneIsEducationColors.secondary}`}`}
+                  >
+                    {milestone.fr.position}
+                  </p>
+                </div>
+                <p className="text-iron-50 flex items-center gap-2 text-sm">
                   <CalendarDays size={16} />
                   {milestone.fr.startMonth} {milestone.fr.startYear} - {milestone.fr.endMonth}{" "}
                   {milestone.fr.endYear}
                 </p>
+                <Button
+                  type="button"
+                  icon={<ArrowRight />}
+                  variant="icon"
+                  className="justify-end self-end"
+                  onClick={() => handleOpenDetails(milestone)}
+                />
               </div>
               <div
-                className={`absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-iron-700 border-2 border-iron-300 rounded-full p-2 ${milestone.isEducation === "false" ? "bg-hibiscus-600" : "bg-persian-green-500"}`}
+                className={`absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-iron-700 border-2 border-iron-300 rounded-full p-2 ${milestone.isEducation === "false" ? "bg-hibiscus-700" : "bg-persian-green-700"}`}
               >
                 {milestone.isEducation === "false" ? (
-                  <Briefcase size={32} className="text-iron-300" />
+                  <Briefcase size={32} className="text-iron-50" />
                 ) : (
-                  <University size={32} className="text-iron-300" />
+                  <University size={32} className="text-iron-50" />
                 )}
               </div>
             </motion.div>
           );
         })}
+        {selectedMilestone && (
+          <Dialog
+            milestoneData={selectedMilestone}
+            onClose={() => handleCloseDetails()}
+            style={
+              selectedMilestone?.isEducation === "false"
+                ? milestoneIsNotEducationColors
+                : milestoneIsEducationColors
+            }
+          />
+        )}
       </div>
     </div>
   );
