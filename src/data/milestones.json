@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "isEducation": "true",
+    "isEducation": true,
     "fr": {
       "startMonth": "septembre",
       "startYear": 2024,
@@ -18,7 +18,7 @@
         "positionDescription": [
           {
             "id": 1,
-            "title": "Formation \u00ab\u00a0Développeur fullstack JS\u00a0\u00bb en alternance de 15 mois (à venir)",
+            "title": "Formation \u00ab\u00a0Développeur fullstack JS\u00a0\u00bb en alternance de 15 mois",
             "tasks": []
           }
         ]
@@ -51,7 +51,7 @@
   },
   {
     "id": 2,
-    "isEducation": "false",
+    "isEducation": false,
     "fr": {
       "startMonth": "mars",
       "startYear": 2024,
@@ -123,7 +123,7 @@
   },
   {
     "id": 3,
-    "isEducation": "true",
+    "isEducation": true,
     "fr": {
       "startMonth": "octobre",
       "startYear": 2023,
@@ -183,7 +183,7 @@
   },
   {
     "id": 4,
-    "isEducation": "true",
+    "isEducation": true,
     "fr": {
       "startMonth": "avril",
       "startYear": 2022,
@@ -239,7 +239,7 @@
   },
   {
     "id": 5,
-    "isEducation": "false",
+    "isEducation": false,
     "fr": {
       "startMonth": "septembre",
       "startYear": 2019,
@@ -317,7 +317,7 @@
   },
   {
     "id": 6,
-    "isEducation": "false",
+    "isEducation": false,
     "fr": {
       "startMonth": "mai",
       "startYear": 2019,
@@ -375,7 +375,7 @@
   },
   {
     "id": 7,
-    "isEducation": "false",
+    "isEducation": false,
     "fr": {
       "startMonth": "octobre",
       "startYear": 2017,
@@ -445,7 +445,7 @@
   },
   {
     "id": 8,
-    "isEducation": "true",
+    "isEducation": true,
     "fr": {
       "startMonth": "octobre",
       "startYear": 2017,
@@ -481,7 +481,7 @@
   },
   {
     "id": 9,
-    "isEducation": "true",
+    "isEducation": true,
     "fr": {
       "startMonth": "octobre",
       "startYear": 2015,
@@ -523,7 +523,7 @@
   },
   {
     "id": 10,
-    "isEducation": "true",
+    "isEducation": true,
     "fr": {
       "startMonth": "septembre",
       "startYear": 2013,

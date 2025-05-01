@@ -140,18 +140,17 @@
     "type": "soft-skill"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Curiosité",
     "alt": "Icône représentant la curiosité",
     "icon-mapping": "Curiosity",
     "type": "soft-skill"
   },
   {
-    "id": 20,
+    "id": 22,
     "name": "Esprit d\u2019équipe",
     "alt": "Icône représentant l\u2019organisation",
     "icon-mapping": "Team",
     "type": "soft-skill"
   }
-  
 ]
