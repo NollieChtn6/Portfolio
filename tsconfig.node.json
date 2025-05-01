@@ -7,8 +7,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "allowJs": true,
-    "noEmit": true,
-    "types": ["@types/node"],
+    "noEmit": false,
+    "types": ["@types/node"]
   },
   "include": ["vite.config.ts", "./.eslintrc.cjs"]
 }

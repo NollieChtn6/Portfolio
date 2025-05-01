@@ -8,18 +8,22 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
+    "declaration": true,
+    "declarationMap": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
-    "paths": 
-    {
-      "@/*": [
-        "./src/*"
-      ]
+    "paths": {
+      "@/*": ["./src/*"]
     },
+
+    /* Build mode support */
+    "composite": true,
+    "incremental": true,
+    "outDir": "dist",
 
     /* Linting */
     "strict": true,
@@ -27,10 +31,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-    "include": [
-    "vite.config.ts",
-    ".eslintrc.cjs",
-    "src"
-  ],
+  "include": ["vite.config.ts", ".eslintrc.cjs", "src", "src/@types/**/*.d.ts", "src/**/*.json"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
