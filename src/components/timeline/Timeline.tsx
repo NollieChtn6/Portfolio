@@ -1,6 +1,6 @@
-import VerticalTimeline from "../userinterface/timeline";
+import { VerticalTimeline } from "@/ui/Timeline";
 
-function Timeline() {
+export function Timeline() {
   return (
     <main className="flex flex-col md:flex-row h-screen overflow-hidden">
       <div className="flex w-full md:w-1/12 h-16 md:h-auto items-center justify-center">
@@ -12,5 +12,3 @@ function Timeline() {
     </main>
   );
 }
-
-export default Timeline;
