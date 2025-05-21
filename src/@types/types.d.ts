@@ -1,10 +1,14 @@
-export type Projecttype = {
+import type { iconMapping } from "@/assets/skills_icons/iconMapping";
+
+export type ProjectType = {
   id: number;
   title: string;
+  isComplete: boolean;
   slug: string;
   summary: string;
   description: string;
   tags: string[];
+  tasks: string[];
   githubUrl: string;
   deploymentUrl: string;
   illustrationUrl: string;
@@ -12,12 +16,12 @@ export type Projecttype = {
   sandbox: boolean;
 };
 
-export type Skilltype = {
+export type SkillType = {
   id: number;
   name: string;
+  type: "front" | "back" | "outil" | "soft-skill";
+  "icon-mapping": keyof typeof iconMapping;
   alt: string;
-  "icon-mapping": string;
-  type: string;
 };
 
 export type PositionDescription = {
@@ -33,9 +37,9 @@ export type MilestoneDetails = {
   positionDescription: PositionDescription[];
 };
 
-export type MilestoneData = {
+export type MilestoneType = {
   id: number;
-  isEducation: "true" | "false";
+  isEducation: boolean;
   fr: {
     startMonth: string;
     startYear: number;
