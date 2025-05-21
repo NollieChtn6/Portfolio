@@ -11,11 +11,11 @@ h2 {
 }
 
 h3 {
-  @apply text-wild-sand-100 text-3xl uppercase font-mono;
+  @apply text-3xl uppercase font-mono;
 }
 
 h4 {
-  @apply text-2xl font-medium text-grandis-300;
+  @apply text-2xl font-medium;
 }
 
 h5 {
@@ -23,33 +23,31 @@ h5 {
 }
 
 ul {
-  @apply text-wild-sand-100 leading-relaxed;
+  @apply leading-relaxed;
 }
 
 p {
-  @apply text-wild-sand-100 font-light leading-relaxed;
+  @apply font-light leading-relaxed text-iron-50;
 }
 
 .page-title {
-  @apply md:rotate-180 md:[writing-mode:vertical-rl];
+  @apply md:rotate-180 md:[writing-mode:vertical-rl] text-persian-green-600;
 }
 
 .active-link {
-  @apply border-b-4 border-mine-shaft-400;
+  @apply border-b-4;
 }
 
 .skills {
-  @apply flex flex-col rounded-md  bg-gradient-to-b from-mine-shaft-950 to-grandis-300 space-y-3 p-6;
+  @apply flex flex-col rounded-md  bg-gradient-to-b from-hibiscus-600/60 to-persian-green-950/50  space-y-3 p-6;
 }
 
 .skill-name {
-  @apply flex self-center text-[0.7rem] text-mine-shaft-700 font-mono;
+  @apply flex self-center text-[0.7rem] text-iron-100 font-mono;
 }
 
-.social-network {
-  @apply max-md:hidden text-sm text-wild-sand-100;
-}
 
 html {
   scrollbar-color: #888 transparent;
+  scrollbar-width: thin;
 }
