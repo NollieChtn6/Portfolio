@@ -19,7 +19,7 @@ export function ProjectDetails() {
   return (
     <main className="about-container flex flex-col md:flex-row max-sm:overflow-y-scroll h-full max-h-screen overflow-hidden">
       <PageTitle title={`Projets • ${selectedProject?.title}`} />
-      <div className="project-content flex flex-col md:flex-row w-full grow overflow-hidden">
+      <section className="project-content flex flex-col md:flex-row w-full grow overflow-hidden">
         <div className="project-img-container hidden md:flex w-full md:w-2/4 p-9 items-center justify-center">
           <img
             src={selectedProject?.illustrationUrl}
@@ -35,11 +35,12 @@ export function ProjectDetails() {
               onClick={handleBackClick}
               variant="ghost"
               size="sm"
-              icon={<ArrowLeft className="text-iron-50" />}
+              icon={<ArrowLeft className="text-iron-50" aria-hidden="true" />}
+              aria-label="Retour à la liste des projets"
             />
           </div>
           <div className="project-header flex space-x-6 items-baseline">
-            <h3 className="project-title flex text-3xl uppercase font-mono max-sm:hidden">
+            <h3 className="project-title text-iron-200 flex text-3xl uppercase font-mono max-sm:hidden">
               {selectedProject?.title}
             </h3>
             <div className="project-status flex text-sm italic text-hibiscus-600">
@@ -51,23 +52,23 @@ export function ProjectDetails() {
               return <Tag className="" key={tag} label={tag} />;
             })}
           </div>
-          <div className="project-details flex flex-col grow overflow-y-auto">
+          <section className="project-details flex flex-col grow overflow-y-auto space-y-6">
             <div className="project-summary ">
               <p className="italic">{selectedProject?.summary}</p>
             </div>
-            <div className="project-description">
+            <div className="project-description space-y-2">
               <h4 className="text-hibiscus-600">Présentation du projet</h4>
               <p className="text-content text-md font-light">{selectedProject?.description}</p>
             </div>
-            <div className="tasks-list">
+            <div className="tasks-list space-y-2">
               <h4 className="text-hibiscus-600">Tâches prises en charge</h4>
-              <ul>
+              <ul className="text-iron-200">
                 {selectedProject?.tasks.map((task) => {
-                  return <li key={selectedProject.id}>•&nbsp;{task}</li>;
+                  return <li key={task}>•&nbsp;{task}</li>;
                 })}
               </ul>
             </div>
-          </div>
+          </section>
 
           {selectedProject?.deploymentUrl ? (
             <div
@@ -81,6 +82,8 @@ export function ProjectDetails() {
                 className="max-sm:w-[120px]"
                 icon={<ExternalLink className="ml-2 max-sm:hidden" />}
                 href={selectedProject?.githubUrl}
+                ariaLabel="Voir le code source du projet sur GitHub"
+                target="_blank"
               >
                 Code source
               </Button>
@@ -92,6 +95,8 @@ export function ProjectDetails() {
                 className="max-sm:w-[120px]"
                 icon={<ExternalLink className="ml-2 max-sm:hidden" />}
                 href={selectedProject?.deploymentUrl}
+                ariaLabel="Voir le projet en ligne"
+                target="_blank"
               >
                 Voir le site
               </Button>
@@ -105,13 +110,15 @@ export function ProjectDetails() {
                 className="max-sm:w-[120px]"
                 icon={<ExternalLink className="ml-2 max-sm:hidden" />}
                 href={selectedProject?.githubUrl}
+                ariaLabel="Voir le code source du projet sur GitHub"
+                target="_blank"
               >
                 Code source
               </Button>
             </div>
           )}
         </div>
-      </div>
+      </section>
     </main>
   );
 }

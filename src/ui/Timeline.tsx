@@ -52,11 +52,7 @@ export function VerticalTimeline() {
                   >
                     {milestone.fr.organisation}
                   </h3>
-                  <p
-                    className={`text-lbase ${milestone.isEducation === false ? `${milestoneIsNotEducationColors.secondary}` : `${milestoneIsEducationColors.secondary}`}`}
-                  >
-                    {milestone.fr.position}
-                  </p>
+                  <p className="text-base text-iron-800">{milestone.fr.position}</p>
                 </div>
                 <p className="text-iron-50 flex items-center gap-2 text-sm">
                   <CalendarDays size={16} />
@@ -70,6 +66,7 @@ export function VerticalTimeline() {
                   variant="secondary"
                   className="justify-end self-end text-iron-50"
                   onClick={() => handleOpenDetails(milestone)}
+                  ariaLabel="Détails de l'expérience"
                 />
               </div>
               <div

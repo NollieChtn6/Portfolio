@@ -32,6 +32,8 @@ export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
       )}
 
       <aside
+        aria-modal="true"
+        aria-label="Menu de navigation"
         className={`z-50 fixed top-0 left-0 h-full w-screen sm:w-1/3 bg-iron-950 text-iron-50 shadow-lg p-4 transform transition-transform duration-300 space-y-12 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
@@ -42,6 +44,7 @@ export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
           className="absolute top-4 right-4"
           icon={<X size={24} />}
           variant="icon"
+          ariaLabel="Fermer le menu"
         />
         <div className="mt-8">
           <nav className="space-y-6 flex flex-col items-center">

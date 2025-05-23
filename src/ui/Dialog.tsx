@@ -19,17 +19,16 @@ export default function Dialog({ milestoneData, onClose, style }: DialogProps) {
         <Button
           type="button"
           icon={<X />}
-          className="absolute top-3 right-3"
+          className="absolute top-3 right-3 text-iron-50 hover:text-iron-200"
           variant="icon"
           onClick={onClose}
+          ariaLabel="Fermer la modale"
         />
         <div className="dialog-header">
           <h3 className={`${style.primary} text-2xl font-semibold`}>
             {milestoneData.fr.organisation} ({milestoneData.fr.city})
           </h3>
-          <p className={`${style.secondary} text-base font-semibold`}>
-            {milestoneData.fr.position}
-          </p>
+          <p className="text-base font-semibold text-iron-800">{milestoneData.fr.position}</p>
         </div>
         <hr className="border-1 border-iron-50" />
 

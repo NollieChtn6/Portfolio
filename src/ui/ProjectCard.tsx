@@ -34,25 +34,33 @@ export function ProjectCard({ project }: ProjectCardProps) {
       className="group relative h-[500px] w-[360px] bg-gradient-to-br from-wine-berry-900 to-wine-berry-400 rounded-2xl p-5 space-y-5 shadow-xl overflow-hidden border border-transparent hover:border-grandis-300/40 transition-all duration-300 hover:cursor-pointer"
     >
       <div className="flex justify-between items-center">
-        <h3 className="">{project.title}</h3>
+        <h3 className="text-iron-50">{project.title}</h3>
+        <h3 className="sr-only">{project.title}</h3>
       </div>
 
       <div className="relative w-full h-[220px] overflow-hidden rounded-xl">
         <img
           src={project.illustrationUrl}
-          alt={project.illustrationAlt}
           className="w-full h-full object-cover"
+          alt={project.illustrationAlt || `Illustration du projet ${project.title}`}
+          aria-label="Illustration du projet"
         />
       </div>
 
-      <div className="flex flex-wrap space-2 pt-2">
+      <div className="flex flex-wrap space-x-2 space-y-2">
         {project.tags.map((tag) => (
           <Tag key={tag} label={tag} />
         ))}
       </div>
 
       <div className="absolute bottom-5 left-5 right-5">
-        <Button type="button" size="lg" className="w-full" onClick={handleClick}>
+        <Button
+          type="button"
+          size="lg"
+          className="w-full"
+          onClick={handleClick}
+          ariaLabel="Détails du projet"
+        >
           En savoir plus →
         </Button>
       </div>

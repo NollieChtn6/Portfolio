@@ -12,6 +12,8 @@ export interface ButtonProps {
   disabled?: boolean;
   icon?: React.ReactNode;
   onClick?: () => void;
+  ariaLabel?: string;
+  target?: "_blank" | "_self";
 }
 
 export function Button({
@@ -24,9 +26,11 @@ export function Button({
   disabled,
   icon,
   onClick,
+  ariaLabel,
+  target,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex w-auto font-light font-mono rounded-lg transition-all duration-200 flex items-center justify-center gap-2";
+    "inline-flex w-auto font-light font-mono rounded-lg transition-all duration-200 flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wine-berry-500";
 
   const sizeStyles = {
     sm: "px-2 py-1 text-sm",
@@ -56,14 +60,27 @@ export function Button({
 
   if (href) {
     return (
-      <NavLink to={href} target="" rel="" className={classes} onClick={onClick}>
+      <NavLink
+        to={href}
+        target=""
+        rel={target === "_blank" ? "noopener noreferrer" : undefined}
+        className={classes}
+        onClick={onClick}
+        aria-label={ariaLabel}
+      >
         {icon} {children}
       </NavLink>
     );
   }
 
   return (
-    <button type={type} onClick={onClick} className={classes} disabled={disabled}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={classes}
+      disabled={disabled}
+      aria-label={ariaLabel}
+    >
       {icon} {children}
     </button>
   );

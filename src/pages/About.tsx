@@ -18,7 +18,10 @@ export function About() {
   return (
     <main className="about-container flex flex-col md:flex-row max-sm:overflow-y-scroll h-full">
       <PageTitle title="À propos de moi" />
-      <div className="about-content flex flex-col md:flex-row w-full h-[90%] md:h-full">
+      <section
+        aria-labelledby="about-heading"
+        className="about-content flex flex-col md:flex-row w-full h-[90%] md:h-full"
+      >
         <div className="about-content-container flex flex-col grow md:h-full p-9 md:p-6 md:w-2/4 space-y-6 md:place-content-center">
           <p className="text-content">
             Contrairement à beaucoup, je ne suis pas &laquo;&nbsp;tombée dans la
@@ -54,7 +57,7 @@ export function About() {
             className="rounded-tl-[35%] rounded-br-[35%] border-4 border-iron-500 brightness-80 md:max-w-[400px] max-md:h-[300px]"
           />
         </div>
-      </div>
+      </section>
     </main>
   );
 }

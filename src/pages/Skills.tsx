@@ -1,13 +1,53 @@
 import type { SkillType } from "@/@types/types";
 import { useSkillsStore } from "@/store/skillsStore";
 import { SkillsBlock } from "@/ui/SkillBlock";
+import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 export function Skills() {
   const { skills } = useSkillsStore();
-  const frontEndSkills = (skills as SkillType[]).filter((skill) => skill.type === "front");
-  const backEndSkills = (skills as SkillType[]).filter((skill) => skill.type === "back");
-  const toolsSkills = (skills as SkillType[]).filter((skill) => skill.type === "outil");
-  const softSkills = (skills as SkillType[]).filter((skill) => skill.type === "soft-skill");
+
+  const { frontEndSkills, backEndSkills, databaseSkills, toolsSkills, softSkills } = useMemo(() => {
+    if (!skills) {
+      return {
+        frontEndSkills: [],
+        backEndSkills: [],
+        databaseSkills: [],
+        toolsSkills: [],
+        softSkills: [],
+      };
+    }
+
+    return skills.reduce(
+      (acc, skill) => {
+        switch (skill.type) {
+          case "front":
+            acc.frontEndSkills.push(skill);
+            break;
+          case "back":
+            acc.backEndSkills.push(skill);
+            break;
+          case "database":
+            acc.databaseSkills.push(skill); // ✅ correction ici
+            break;
+          case "outil":
+            acc.toolsSkills.push(skill);
+            break;
+          case "soft-skill":
+            acc.softSkills.push(skill);
+            break;
+        }
+        return acc;
+      },
+      {
+        frontEndSkills: [] as SkillType[],
+        backEndSkills: [] as SkillType[],
+        databaseSkills: [] as SkillType[], // ✅ ajout ici
+        toolsSkills: [] as SkillType[],
+        softSkills: [] as SkillType[],
+      },
+    );
+  }, [skills]);
 
   return (
     <main className="skills-container flex flex-col md:flex-row h-full overflow-hidden">
@@ -15,10 +55,41 @@ export function Skills() {
         <h2 className="page-title">Compétences</h2>
       </div>
       <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 lg:overflow-y-scroll">
-        <SkillsBlock title="Front-End" skills={frontEndSkills} />
-        <SkillsBlock title="Back-End" skills={backEndSkills} />
-        <SkillsBlock title="Outils" skills={toolsSkills} />
-        <SkillsBlock title="Soft Skills" skills={softSkills} />
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <SkillsBlock title="Front-End" skills={frontEndSkills} />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <SkillsBlock title="Back-End" skills={backEndSkills} />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <SkillsBlock title="Base de données" skills={databaseSkills} />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <SkillsBlock title="Outils" skills={toolsSkills} />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <SkillsBlock title="Soft Skills" skills={softSkills} />
+        </motion.div>
       </div>
     </main>
   );

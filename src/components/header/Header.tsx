@@ -13,11 +13,13 @@ export function Header() {
       icon: <Linkedin />,
       href: "https://www.linkedin.com/in/noellie-chatain-six/",
       label: "LinkedIn",
+      ariaLabel: "Vers mon profil LinkedIn",
     },
     {
       icon: <Github />,
       href: "https://github.com/NollieChtn6",
       label: "GitHub",
+      ariaLabel: "Vers mon profil GitHub",
     },
   ];
   const [sheetIsOpen, setSheetIsOpen] = useState(false);
@@ -32,13 +34,14 @@ export function Header() {
           variant="ghost"
           icon={<Menu />}
           className="text-firefly-400"
+          ariaLabel="Ouveir le menu"
         >
           <span className="hidden sm:flex">Menu</span>
         </Button>
       </div>
       <div className="title-container max-sm:2/4 p-">
         <NavLink to="/">
-          <img src={logo} alt="Logo NC•6" className="hidden sm:flex" />
+          <img src={logo} alt="Logo NC•6" className="hidden sm:flex" aria-label="Vers l'accueil" />
         </NavLink>
       </div>
       <div className="social-links-container flex gap-2">
@@ -51,6 +54,8 @@ export function Header() {
             href={socialNetwork.href}
             icon={socialNetwork.icon}
             className="text-firefly-400"
+            ariaLabel={socialNetwork.ariaLabel}
+            target="_blank"
           />
         ))}
       </div>
