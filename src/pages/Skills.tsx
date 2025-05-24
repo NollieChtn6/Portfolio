@@ -42,7 +42,7 @@ export function Skills() {
       {
         frontEndSkills: [] as SkillType[],
         backEndSkills: [] as SkillType[],
-        databaseSkills: [] as SkillType[], // ✅ ajout ici
+        databaseSkills: [] as SkillType[],
         toolsSkills: [] as SkillType[],
         softSkills: [] as SkillType[],
       },
