@@ -21,6 +21,13 @@ import {
   CookieIcon,
   OrganisationIcon,
   CuriosityIcon,
+  AngularIcon,
+  LaravelIcon,
+  GraphQLIcon,
+  PHPStormIcon,
+  SQLIteIcon,
+  TypeORMIcon,
+  WebstormIcon,
 } from "../../assets/skills_icons";
 
 export const iconMapping: { [key: string]: string } = {
@@ -46,4 +53,11 @@ export const iconMapping: { [key: string]: string } = {
   Cookie: CookieIcon,
   Organisation: OrganisationIcon,
   Curiosity: CuriosityIcon,
+  Angular: AngularIcon,
+  Laravel: LaravelIcon,
+  GraphQL: GraphQLIcon,
+  PHPStorm: PHPStormIcon,
+  SQLite: SQLIteIcon,
+  TypeORM: TypeORMIcon,
+  WebStorm: WebstormIcon,
 };
