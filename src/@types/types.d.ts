@@ -19,7 +19,7 @@ export type ProjectType = {
 export type SkillType = {
   id: number;
   name: string;
-  type: "front" | "back" | "outil" | "soft-skill";
+  type: "front" | "back" | "outil" | "soft-skill" | "database";
   "icon-mapping": keyof typeof iconMapping;
   alt: string;
 };
