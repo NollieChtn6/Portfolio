@@ -14,6 +14,7 @@ export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
     { label: "Parcours", href: "/timeline" },
     { label: "Projets", href: "/projects" },
     { label: "Compétences", href: "/skills" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (

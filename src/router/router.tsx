@@ -7,6 +7,7 @@ import { Timeline } from "@/components/timeline/Timeline";
 import { Skills } from "@/pages/Skills";
 import { Projects } from "../pages/Projects";
 import { ProjectDetails } from "@/pages/ProjectDetails";
+import { Contact } from "@/pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/skills", element: <Skills /> },
       { path: "/projects", element: <Projects /> },
       { path: "/projects/:slug", element: <ProjectDetails /> },
+      { path: "/contact", element: <Contact /> },
     ],
   },
 ]);
