@@ -40,15 +40,17 @@
     "title": "To Do List",
     "isComplete": true,
     "slug": "basic-todo",
-    "summary": "Une to-do list basique pour découvrir la gestion des states avec React",
+    "summary": "Une to-do list simple et efficace",
     "description": "Cette to-do list simplifiée permet de créer, modifier, supprimer des tâches et de les marquer comme terminées en manipulant le hook useState de React. À noter, elle ne prend pas  en charge la persistence des données. Une version 2.0 devrait arriver prochainement.",
     "tasks": [
+      "Mise en place du CRUD avec Express et SQLite",
+      "Création de l\u2019API REST",
       "Création de l\u2019interface client",
       "Gestion de la liste des tâches à l\u2019aide du state de React",
       "Mise en place des fonctionnalités de création, de modification et de suppression d\u2019une tâche."
     ],
-    "tags": ["React", "CSS"],
-    "githubUrl": "https://github.com/NollieChtn6/Basic-Todo-List-Interface",
+    "tags": ["Express", "SQLite", "React", "CSS"],
+    "githubUrl": "https://github.com/NollieChtn6/Todo-List-2.0",
     "deploymentUrl": "",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Basic-Todo-List-Interface/main/result/todo_list_interface_final_result.png",
     "illustrationAlt": "Interface de la to-do list, avec un formulaire et une liste de tâches",
@@ -130,6 +132,62 @@
     "deploymentUrl": "https://o-coloc-front.onrender.com/",
     "illustrationUrl": "https://raw.githubusercontent.com/O-clock-Kimchi/O-Coloc-front/main/src/assets/result/cohabit_final_result.png",
     "illustrationAlt": "Page d\u2019accueil de CoHabit App",
+    "sandbox": false
+  },
+  {
+    "id": 8,
+    "title": "Pomodoro Timer",
+    "isComplete": true,
+    "slug": "pomodoro-timer",
+    "summary": "Un minuteur Pomodoro pour gérer son temps de travail",
+    "description": "Ce minuteur Pomodoro est un projet réalisé en solo. Il permet de gérer son temps de travail et de pause à l\u2019aide d\u2019un minuteur. Il est possible de personnaliser la durée des sessions et des pauses.",
+    "tasks": [
+      "Création de l\u2019interface client",
+      "Gestion du minuteur avec le hook useState de React",
+      "Mise en place des fonctionnalités modification de la durée des sessions et des pauses"
+    ],
+    "tags": ["React"],
+    "githubUrl": "https://github.com/NollieChtn6/Pomodoro-Timer",
+    "deploymentUrl": "https://pomodoro-timer.nolliechtn6.com/",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Pomodoro-Timer/refs/heads/main/src/assets/result/pomodoro_final_result.png",
+    "illustrationAlt": "Interface du timer",
+    "sandbox": false
+  },
+  {
+    "id": 9,
+    "title": "Générateur de mots de passe",
+    "isComplete": true,
+    "slug": "password-generator",
+    "summary": "Un générateur de mots de passe aléatoires",
+    "description": "Ce générateur de mots de passe aléatoires permet de générer des mots de passe aléatoires en fonction des critères choisis par l\u2019utilisateur.",
+    "tasks": [
+      "Création de l\u2019interface client",
+      "Génération du mot de passe en fonction des crières choisis par l\u2019utilisateur (longueur, caractères spéciaux, etc.)"
+    ],
+    "tags": ["React"],
+    "githubUrl": "https://github.com/NollieChtn6/Password-Generator",
+    "deploymentUrl": "https://password-generator.nolliechtn6.com/",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Password-Generator/refs/heads/main/src/assets/result/password-generator_final_result.png",
+    "illustrationAlt": "Interface du générateur de mots de passe",
+    "sandbox": false
+  },
+  {
+    "id": 10,
+    "title": "Live Weather App",
+    "isComplete": true,
+    "slug": "live-weather-app",
+    "summary": "Une application météo en temps réel basée sur Visual Crossing Weather API",
+    "tasks": [
+      "Création de l\u2019interface client",
+      "Création de la carte interactive avec React Leaflet",
+      "Mise en place des fonctionnalités de géolocalisation automatique et de sélection d\u2019un point sur la carte",
+      "Récupération des données météo en temps réel à l\u2019aide de l\u2019API Visual Crossing Weather"
+    ],
+    "tags": ["React", "React Leaflet"],
+    "githubUrl": "https://github.com/NollieChtn6/Live-Weather-App",
+    "deploymentUrl": "https://weather-app.nolliechtn6.com/",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Live-Weather-App/refs/heads/main/src/assets/result/weather-app_final_result.png",
+    "illustrationAlt": "Interface du l\u2019application météo",
     "sandbox": false
   }
 ]
