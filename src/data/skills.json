@@ -60,7 +60,7 @@
     "name": "PostgreSQL",
     "alt": "Icône de PostgreSQL",
     "icon-mapping": "PostgreSQL",
-    "type": "back"
+    "type": "database"
   },
   {
     "id": 10,
@@ -81,7 +81,7 @@
     "name": "Sequelize",
     "alt": "Icône de Sequelize",
     "icon-mapping": "Sequelize",
-    "type": "back"
+    "type": "database"
   },
   {
     "id": 13,
@@ -104,13 +104,7 @@
     "icon-mapping": "VSCode",
     "type": "outil"
   },
-  {
-    "id": 16,
-    "name": "Vite.js",
-    "alt": "Icône de Vite.js",
-    "icon-mapping": "Vite.js",
-    "type": "front"
-  },
+
   {
     "id": 17,
     "name": "Notion",
@@ -152,5 +146,54 @@
     "alt": "Icône représentant l\u2019organisation",
     "icon-mapping": "Team",
     "type": "soft-skill"
+  },
+  {
+    "id": 23,
+    "name": "Angular",
+    "alt": "Icône d\u2019Angular",
+    "icon-mapping": "Angular",
+    "type": "front"
+  },
+  {
+    "id": 24,
+    "name": "Laravel",
+    "alt": "Icône de Laravel",
+    "icon-mapping": "Laravel",
+    "type": "back"
+  },
+  {
+    "id": 25,
+    "name": "TypeORM",
+    "alt": "Icône de TypeORM",
+    "icon-mapping": "TypeORM",
+    "type": "database"
+  },
+  {
+    "id": 26,
+    "name": "GraphQL",
+    "alt": "Icône de GraphQL",
+    "icon-mapping": "GraphQL",
+    "type": "back"
+  },
+  {
+    "id": 27,
+    "name": "SQLite",
+    "alt": "Icône de SQLite",
+    "icon-mapping": "SQLite",
+    "type": "database"
+  },
+  {
+    "id": 29,
+    "name": "PHPStorm",
+    "alt": "Icône de PHPStorm",
+    "icon-mapping": "PHPStorm",
+    "type": "outil"
+  },
+  {
+    "id": 30,
+    "name": "WebStorm",
+    "alt": "Icône de WebStorm",
+    "icon-mapping": "WebStorm",
+    "type": "outil"
   }
 ]
