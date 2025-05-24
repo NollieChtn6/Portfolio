@@ -28,7 +28,7 @@ export function Skills() {
             acc.backEndSkills.push(skill);
             break;
           case "database":
-            acc.databaseSkills.push(skill); // ✅ correction ici
+            acc.databaseSkills.push(skill);
             break;
           case "outil":
             acc.toolsSkills.push(skill);
