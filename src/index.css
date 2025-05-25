@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-  @apply text-iron-50 text-3xl p-6 uppercase font-mono;
+  @apply text-iron-200 text-3xl p-6 uppercase font-mono;
 }
 
 h3 {
@@ -19,7 +19,7 @@ h4 {
 }
 
 h5 {
-  @apply text-iron-50 text-lg font-semibold;
+  @apply text-iron-200 text-lg font-semibold;
 }
 
 ul {
@@ -27,7 +27,7 @@ ul {
 }
 
 p {
-  @apply font-light leading-relaxed text-iron-50;
+  @apply font-light leading-relaxed text-iron-200;
 }
 
 .page-title {
@@ -43,7 +43,20 @@ p {
 }
 
 .skill-name {
-  @apply flex self-center text-[0.7rem] text-iron-100 font-mono;
+  @apply flex self-center text-[0.7rem] text-iron-200 font-mono;
+}
+
+.label {
+  @apply text-iron-200 text-base;
+}
+
+.form-input-group {
+  @apply flex-col space-y-2 text-iron-200 placeholder:text-iron-200/50 rounded-md;
+}
+
+.input,
+.textarea {
+  @apply block w-full p-2 border border-hibiscus-900 text-iron-900 rounded-md focus:ring-hibiscus-400 focus:border-hibiscus-700 bg-iron-100;
 }
 
 
