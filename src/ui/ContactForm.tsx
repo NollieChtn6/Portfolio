@@ -1,8 +1,175 @@
+// import type { FormEvent } from "react";
+
+// import { SendHorizontal } from "lucide-react";
+// import { Button } from "./Button";
+// import { motion } from "motion/react";
+// import { useForm, ValidationError } from "@formspree/react";
+
+// import { Toast } from "./Toast";
+// import { useEffect, useState } from "react";
+
+// export default function ContactForm() {
+//   const [state, handleSubmit] = useForm("xkgrlgqr");
+//   const [displayToast, setDisplayToast] = useState<boolean>(false);
+
+//   return (
+//     <motion.div
+//       initial={{ opacity: 0, y: 30 }}
+//       animate={{ opacity: 1, y: 0 }}
+//       transition={{ duration: 0.6, ease: "easeOut" }}
+//     >
+//       <form
+//         className="space-y-6 bg-persian-green-500/30 p-6 rounded-lg shadow-md max-w-[600px] mx-auto"
+//         name="contact"
+//         method="POST"
+//         onSubmit={handleSubmit}
+//       >
+//         <input type="hidden" name="_format" value="plain" />
+//         <input type="text" name="_gotcha" className="hidden" />
+//         <div className="form-input-group">
+//           <label htmlFor="firstName" className="label">
+//             Prénom
+//           </label>
+//           <input
+//             type="text"
+//             id="firstName"
+//             name="firstName"
+//             required
+//             placeholder="Votre prénom"
+//             className="input"
+//           />
+//           <ValidationError prefix="Prénom" field="firstName" errors={state.errors} />
+//         </div>
+
+//         <div className="form-input-group">
+//           <label htmlFor="lastName" className="label">
+//             Nom
+//           </label>
+//           <input
+//             type="text"
+//             id="lastName"
+//             name="lastName"
+//             required
+//             placeholder="Votre nom"
+//             className="input"
+//           />
+//           <ValidationError prefix="Nom" field="lastName" errors={state.errors} />
+//         </div>
+
+//         <div className="form-input-group">
+//           <label htmlFor="email" className="label">
+//             Email
+//           </label>
+//           <input
+//             type="email"
+//             id="email"
+//             name="email"
+//             required
+//             placeholder="Votre email"
+//             className="input"
+//           />
+//           <ValidationError prefix="Email" field="email" errors={state.errors} />
+//         </div>
+
+//         <div className="form-input-group">
+//           <label htmlFor="message" className="label">
+//             Message
+//           </label>
+//           <textarea
+//             id="message"
+//             name="message"
+//             required
+//             rows={4}
+//             placeholder="Votre message..."
+//             className="textarea"
+//           />
+//           <ValidationError prefix="Message" field="message" errors={state.errors} />
+//         </div>
+//         <div className="btn-container flex place-content-end">
+//           <Button
+//             type="submit"
+//             variant="primary"
+//             size="md"
+//             icon={<SendHorizontal size={20} />}
+//             ariaLabel="Envoyer le message"
+//             disabled={state.submitting}
+//           >
+//             {state.submitting ? "Envoi en cours..." : "Envoyer"}
+//           </Button>
+//         </div>
+//       </form>
+//       (state.succeeded && return (
+//       <Toast
+//         type="success"
+//         isVisible={true}
+//         title="Message envoyé !"
+//         message="Merci pour votre message, je vous répondrai dès que possible."
+//         onClose={() => setDisplayToast(false)}
+//       />
+//       ) :
+//       <Toast
+//         type="error"
+//         isVisible={true}
+//         title="Une erreur est survenue..."
+//         message="Veuillez réessayer plus tard."
+//         onClose={() => setDisplayToast(false)}
+//       />
+//       )
+//     </motion.div>
+//   );
+// }
+
 import { SendHorizontal } from "lucide-react";
 import { Button } from "./Button";
 import { motion } from "motion/react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Toast } from "./Toast";
+import { useEffect, useRef, useState } from "react";
 
 export default function ContactForm() {
+  const [state, handleSubmit] = useForm("xkgrlgqr");
+  const [toastProps, setToastProps] = useState<{
+    isVisible: boolean;
+    type: "success" | "error";
+    title: string;
+    message: string;
+  }>({
+    isVisible: false,
+    type: "success",
+    title: "",
+    message: "",
+  });
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setToastProps({
+        isVisible: true,
+        type: "success",
+        title: "Message envoyé !",
+        message: "Merci pour votre message, je vous répondrai dès que possible.",
+      });
+      formRef.current?.reset();
+    } else if (state.errors && Object.keys(state.errors).length > 0) {
+      setToastProps({
+        isVisible: true,
+        type: "error",
+        title: "Une erreur est survenue...",
+        message: "Veuillez réessayer plus tard.",
+      });
+    }
+  }, [state.succeeded, state.errors]);
+
+  useEffect(() => {
+    if (toastProps.isVisible) {
+      const timer = setTimeout(() => {
+        setToastProps((prev) => ({ ...prev, isVisible: false }));
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [toastProps.isVisible]);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -10,10 +177,15 @@ export default function ContactForm() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <form
+        ref={formRef}
         className="space-y-6 bg-persian-green-500/30 p-6 rounded-lg shadow-md max-w-[600px] mx-auto"
         name="contact"
         method="POST"
+        onSubmit={handleSubmit}
       >
+        <input type="hidden" name="_format" value="plain" />
+        <input type="text" name="_gotcha" className="hidden" />
+
         <div className="form-input-group">
           <label htmlFor="firstName" className="label">
             Prénom
@@ -26,6 +198,7 @@ export default function ContactForm() {
             placeholder="Votre prénom"
             className="input"
           />
+          <ValidationError prefix="Prénom" field="firstName" errors={state.errors} />
         </div>
 
         <div className="form-input-group">
@@ -40,6 +213,7 @@ export default function ContactForm() {
             placeholder="Votre nom"
             className="input"
           />
+          <ValidationError prefix="Nom" field="lastName" errors={state.errors} />
         </div>
 
         <div className="form-input-group">
@@ -54,6 +228,7 @@ export default function ContactForm() {
             placeholder="Votre email"
             className="input"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         <div className="form-input-group">
@@ -68,7 +243,9 @@ export default function ContactForm() {
             placeholder="Votre message..."
             className="textarea"
           />
+          <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
+
         <div className="btn-container flex place-content-end">
           <Button
             type="submit"
@@ -76,11 +253,20 @@ export default function ContactForm() {
             size="md"
             icon={<SendHorizontal size={20} />}
             ariaLabel="Envoyer le message"
+            disabled={state.submitting}
           >
-            Envoyer
+            {state.submitting ? "Envoi en cours..." : "Envoyer"}
           </Button>
         </div>
       </form>
+
+      <Toast
+        type={toastProps.type}
+        isVisible={toastProps.isVisible}
+        title={toastProps.title}
+        message={toastProps.message}
+        onClose={() => setToastProps((prev) => ({ ...prev, isVisible: false }))}
+      />
     </motion.div>
   );
 }
