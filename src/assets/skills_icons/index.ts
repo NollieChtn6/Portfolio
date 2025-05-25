@@ -23,7 +23,7 @@ export { default as CuriosityIcon } from "./Curiosity.svg";
 export { default as AngularIcon } from "./Angular.svg";
 export { default as LaravelIcon } from "./Laravel.svg";
 export { default as GraphQLIcon } from "./GraphQL.svg";
-export { default as PHPStormIcon } from "./PHPStorm.svg";
+export { default as PHPStormIcon } from "./PhpStorm.svg";
 export { default as SQLIteIcon } from "./SQLite.svg";
 export { default as TypeORMIcon } from "./TypeORM.svg";
 export { default as WebstormIcon } from "./WebStorm.svg";
