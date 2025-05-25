@@ -5,6 +5,7 @@ import ScreenComponent from "../components/screen/Screen";
 import { downloadFile } from "../utils/downloadFile";
 
 import cv from "../assets/CHATAIN_SIX_CV_2024.pdf";
+import { PageTitle } from "@/ui/PageTitle";
 
 export function HomePage() {
   const handleFileDownload = (): void => {
@@ -13,8 +14,9 @@ export function HomePage() {
 
   return (
     <main className="homepage-container flex flex-col md:flex-row max-sm:overflow-y-scroll h-full">
-      <section className="homepage-content-left flex flex-col md:flex-row w-full md:w-2/4">
-        <div className="about-text-container text-woodsmoke-200 flex flex-col grow md:h-full  p-9 md:w-2/4 space-y-6 md:place-content-center">
+      <PageTitle title="" />
+      <section className="homepage-content-left flex flex-col md:flex-row w-full md:w-2/4 p-10">
+        <div className="about-text-container text-iron-200 flex flex-col grow md:h-full p-9 md:w-2/4 space-y-6 md:place-content-center place-self-center">
           <h1>Noëllie Chatain Six</h1>
           <h1 className="sr-only">Portfolio de Noëllie Chatain Six</h1>
           <p className="hero-subtitle flex w-[75%] text-sm md:text-md xl:text-xl animate-typing overflow-hidden whitespace-nowrap font-mono border-r-4">
