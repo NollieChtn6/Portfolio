@@ -10,7 +10,7 @@ export function Contact() {
       <PageTitle title="Contact" />
       <section
         aria-labelledby="contact-heading"
-        className="about-content flex flex-col md:flex-row w-full h-[90%] md:h-full"
+        className="contact-content flex flex-col md:flex-row w-full h-[90%] md:h-full"
       >
         <div className="flex flex-col grow p-6 w-full md:w-2/5 max-w-4xl mx-auto space-y-6 justify-center">
           <ContactForm />
