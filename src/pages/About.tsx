@@ -1,7 +1,7 @@
 import { PageTitle } from "@/ui/PageTitle";
 import { Button } from "../ui/Button";
 
-import picture from "../assets/profile_picture_colors.png";
+import picture from "../assets/profile_picture.png";
 
 export function About() {
   const NAV_LINKS = [
