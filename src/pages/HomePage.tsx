@@ -4,12 +4,12 @@ import ScreenComponent from "../components/screen/Screen";
 
 import { downloadFile } from "../utils/downloadFile";
 
-import cv from "../assets/CHATAIN_SIX_CV_2024.pdf";
+import cv from "../assets/CHATAIN_SIX_CV_2025.pdf";
 import { PageTitle } from "@/ui/PageTitle";
 
 export function HomePage() {
   const handleFileDownload = (): void => {
-    downloadFile(cv, "CHATAIN_SIX_CV_2024.pdf");
+    downloadFile(cv, "CHATAIN_SIX_Web_developer_CV_2025.pdf");
   };
 
   return (
