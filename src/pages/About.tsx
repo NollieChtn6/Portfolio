@@ -53,7 +53,7 @@ export function About() {
         <div className="about-img-container flex h-2/4 md:h-full p-9  md:w-2/4 place-content-center items-center">
           <img
             src={picture}
-            alt="Une petite fille avec une corne de licorne, une tresse et des lunettes"
+            alt="Une femme aux cheveux noirs, souriant"
             className="rounded-tl-[35%] rounded-br-[35%] border-4 border-iron-500 brightness-80 md:max-w-[400px] max-md:h-[300px]"
           />
         </div>
