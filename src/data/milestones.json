@@ -32,7 +32,7 @@
             "tasks": [
               "Préparation des maquettes pour la nouvelle version de l\u2019outil (Figma)",
               "Mise en place des tables correspondantes dans la base de données",
-              "Développêment des interfaces (Bootstrap & Angular)",
+              "Développement des interfaces (Bootstrap & Angular)",
               "Intégration du backend en lien avec les contraintes de sécurité et de performance"
             ]
           }
