@@ -50,8 +50,8 @@ export function Skills() {
   }, [skills]);
 
   return (
-    <main className="skills-container flex flex-col md:flex-row h-full overflow-hidden">
-      <div className="skills-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center">
+    <main className="skills-container flex flex-col md:flex-row h-full overflow-scroll">
+      <div className="skills-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center over">
         <h2 className="page-title">Compétences</h2>
       </div>
       <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 lg:overflow-y-scroll">
