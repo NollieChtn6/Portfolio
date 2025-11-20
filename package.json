@@ -17,6 +17,7 @@
     "clsx": "^2.1.1",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
+    "gsap": "^3.13.0",
     "install": "^0.13.0",
     "lucide-react": "^0.379.0",
     "motion": "^12.4.11",
@@ -26,13 +27,15 @@
     "react-router-dom": "^6.23.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "zustand": "^5.0.3"
+    "three": "^0.181.2",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-vertical-timeline-component": "^3.3.6",
+    "@types/three": "^0.181.0",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
