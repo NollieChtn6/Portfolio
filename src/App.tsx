@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NavBar from "./components/Navbar";
-import ScreenSize from "./components/devComponent/ScreenSize";
+//import ScreenSize from "./components/devComponent/ScreenSize";
 
 import { useWindowSize } from "./customHooks/useWindowSize";
 import { useProjectsStore } from "./store/projectsStore";
@@ -54,7 +54,7 @@ export function App() {
           <Outlet />
         </div>
         <Footer />
-        <ScreenSize />
+        {/* <ScreenSize /> */}
       </div>
     </div>
   );
