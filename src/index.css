@@ -70,7 +70,7 @@ p {
 }
 
 .social-links-container .social-icon:focus-visible {
-  @apply outline-2 outline-offset-2 outline-wine-berry-500;
+  @apply outline-2 outline-offset-2;
 }
 
 .active-link {
@@ -78,7 +78,7 @@ p {
 }
 
 .skills {
-  @apply flex flex-col rounded-md  bg-gradient-to-b from-hibiscus-600/60 to-persian-green-950/50  space-y-3 p-6;
+  @apply flex flex-col rounded-md space-y-3 p-6;
 }
 
 .skill-name {
