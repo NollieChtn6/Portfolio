@@ -1,0 +1,54 @@
+[
+  {
+    "id": "training-wcs",
+    "startMonth": "septembre",
+    "startYear": 2024,
+    "endMonth": "décembre",
+    "endYear": 2025,
+    "organisation": "Wild Code School",
+    "city": "Paris",
+    "zipcode": 75000,
+    "title": "Formation \u00ab\u00a0Développeur fullstack JS\u00a0\u00bb en alternance",
+    "diploma": "",
+    "yearOfGraduation": null
+  },
+  {
+    "id": "training-oclock",
+    "startMonth": "octobre",
+    "startYear": 2023,
+    "endMonth": "avril",
+    "endYear": 2024,
+    "organisation": "O'Clock",
+    "city": "Paris",
+    "zipcode": 75000,
+    "title": "Formation \u00ab\u00a0Développeur fullstack JS\u00a0\u00bb",
+    "diploma": "Titre RNCP Développeur Web et Web Mobile (niveau 5)",
+    "yearOfGraduation": 2024
+  },
+  {
+    "id": "training-gobelins",
+    "startMonth": "avril",
+    "startYear": 2022,
+    "endMonth": "avril",
+    "endYear": 2022,
+    "organisation": "Gobelins Paris",
+    "city": "Paris",
+    "zipcode": 75020,
+    "title": "Fondamentaux de la gestion de projets digitaux",
+    "diploma": "",
+    "yearOfGraduation": null
+  },
+  {
+    "id": "training-isit",
+    "startMonth": "septembre",
+    "startYear": 2016,
+    "endMonth": "septembre",
+    "endYear": 2018,
+    "organisation": "ISIT Paris",
+    "city": "Arcueil",
+    "zipcode": 94110,
+    "title": "Communication interculturelle et traduction",
+    "diploma": "Master Traduction Interculturelle et Communication",
+    "yearOfGraduation": 2018
+  }
+]

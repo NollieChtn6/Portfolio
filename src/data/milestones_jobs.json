@@ -1,0 +1,61 @@
+[
+  {
+    "id": "job-db",
+    "startMonth": "octobre",
+    "startYear": 2024,
+    "endMonth": "novembre",
+    "endYear": 2025,
+    "organisation": "Direction du Budget",
+    "city": "Paris",
+    "zipcode": 75012,
+    "position": "Développeuse fullstack",
+    "details": {
+      "positionType": "apprentissage",
+      "tasks": [
+        "Refonte d'un module applicatif Angular/Laravel pour la gestion budgétaire",
+        "Conception et exposition d'API REST, intégration PostgreSQL",
+        "Implémentation des règles métier et sécurisation des traitements",
+        "Collaboration avec les utilisateurs pour faciliter l'adoption et répondre aux besoins existants",
+        "Participation à d'autres projets internes, consolidation de la stack JS/PHP et des workflows GitLab"
+      ]
+    }
+  },
+  {
+    "id": "job-db",
+    "startMonth": "octobre",
+    "startYear": 2025,
+    "endMonth": "",
+    "endYear": null,
+    "organisation": "Code Rouge Info",
+    "city": "Paris",
+    "zipcode": 75012,
+    "position": "Développeuse web bénévole",
+    "details": {
+      "positionType": "bénévolat",
+      "tasks": ["Refonte de l'intranet de l'association"]
+    }
+  },
+  {
+    "id": "job-mti",
+    "startMonth": "septembre",
+    "startYear": 2019,
+    "endMonth": "avril",
+    "endYear": 2024,
+    "organisation": "mot.tiff Inside",
+    "city": "Paris",
+    "zipcode": 75004,
+    "position": "Cheffe de projets linguistiques et digitaux",
+    "details": {
+      "positionType": "CDI",
+      "tasks": [
+        "Recueil et analyse des besoins utilisateurs pour projets digitaux et éditoriaux",
+        "Rédaction de user stories, documents de cadrage et spécifications fonctionnelles",
+        "Suivi des sprints, coordination avec les équipes techniques et créatives",
+        "Recettage : préparation des tests d'acceptation et suivi des corrections",
+        "Création de documentation utilisateur et guides associés",
+        "Exploitation de documents d'archives, recherches historiques et biographiques",
+        "Création et révision de contenus textuels multilingues"
+      ]
+    }
+  }
+]
