@@ -1,12 +1,10 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
-import { Menu } from "lucide-react";
-
+import logo from "@/assets/logo.svg";
+import { useWindowSize } from "@/customHooks/useWindowSize";
 import { Button } from "@/ui/Button";
 import Sheet from "@/ui/Sheet";
-import logo from "../assets/logo.svg";
-import { useWindowSize } from "@/customHooks/useWindowSize";
+import { Menu } from "lucide-react";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export function Header() {
   const { width } = useWindowSize();
