@@ -14,6 +14,7 @@ export interface ButtonProps {
   onClick?: () => void;
   ariaLabel?: string;
   target?: "_blank" | "_self";
+  title?: string;
 }
 
 export function Button({
@@ -28,24 +29,25 @@ export function Button({
   onClick,
   ariaLabel,
   target,
+  title,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex w-auto font-light font-mono rounded-lg transition-all duration-200 flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wine-berry-500";
+    "inline-flex w-auto font-light font-mono rounded-lg transition-all duration-300 flex items-center justify-center gap-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cornflower-blue-400 disabled:cursor-not-allowed cursor-pointer";
 
   const sizeStyles = {
     sm: "px-2 py-1 text-sm",
-    md: "px-4 py-2 text-base",
-    lg: "px-6 py-3 text-lg",
+    md: "px-6 py-3 text-base",
+    lg: "px-8 py-4 text-lg",
   };
 
   const variantStyles = {
     primary:
-      "bg-wine-berry-800 text-iron-50 hover:bg-wine-berry-700 enabled:hover:scale-105 disabled:bg-wine-berry-500 disabled:text-iron-50",
+      "bg-navy-blue-800 text-iron-50 hover:bg-navy-blue-500 enabled:hover:scale-105 disabled:bg-navy-blue-500 disabled:text-iron-50",
     secondary:
-      "bg-firefly-600 hover:bg-firefly-400 enabled:hover:scale-105 disabled:bg-firefly-300 disabled:text-iron-50",
+      "bg-cornflower-blue-600 hover:bg-cornflower-blue-400 enabled:hover:scale-105 disabled:bg-cornflower-blue-300 disabled:text-iron-50",
     outline:
-      "border text-iron-50 border-wine-berry-800 enabled:hover:scale-105 hover:bg-wine-berry-300",
-    ghost: "hover:scale-105",
+      "border text-iron-50 border-navy-blue-800 enabled:hover:scale-105 hover:bg-navy-blue-500",
+    ghost: "text-iron-50 hover:scale-105",
     icon: "hover:scale-105",
   };
 
@@ -67,6 +69,7 @@ export function Button({
         className={classes}
         onClick={onClick}
         aria-label={ariaLabel}
+        title={title}
       >
         {icon} {children}
       </NavLink>
@@ -80,6 +83,7 @@ export function Button({
       className={classes}
       disabled={disabled}
       aria-label={ariaLabel}
+      title={title}
     >
       {icon} {children}
     </button>

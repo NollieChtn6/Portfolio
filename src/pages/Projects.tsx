@@ -1,53 +1,70 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
-
+import CardSwap, { Card } from "../ui/CardSwap";
+import type { Project } from "@/@types/types";
+import { Button } from "@/ui/Button";
 import { PageTitle } from "@/ui/PageTitle";
-import { ProjectCard } from "@/ui/ProjectCard";
-import { Switch } from "@/ui/Switch";
+import { Github, Rocket } from "lucide-react";
+import { motion } from "motion/react";
 
-import { useProjectsStore } from "../store/projectsStore";
+import projects from "@/data/projects.json";
+
+const PROJECTS: Project[] = projects as Project[];
 
 export function Projects() {
-  const { projects } = useProjectsStore();
-  const sandboxProjects = projects.filter((sandboxProject) => sandboxProject.sandbox === true);
-  const [displaySandboxOnly, setDisplaySandboxOnly] = useState<boolean>(false);
-  const displayedProjects = (displaySandboxOnly ? sandboxProjects : projects).slice().reverse();
-
   return (
-    <main className="projects-container flex flex-col md:flex-row h-full overflow-hidden">
-      <PageTitle title="Projets" />
+    <main className="projects-container flex flex-col md:flex-row w-full h-full overflow-hidden p-10 gap-8">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="flex w-full md:w-1/2 h-auto md:h-full p-4 md:p-8 items-start md:items-center justify-start md:justify-center"
+      >
+        <PageTitle title="Projets" />
+      </motion.div>
 
-      <div className="projects-content flex flex-col w-full h-full p-3 items-center space-y-6 overflow-hidden">
-        <div className="w-full h-[50px] px-3">
-          <div className="flex items-center space-x-2 h-full justify-end">
-            <Switch
-              checked={displaySandboxOnly}
-              onChange={setDisplaySandboxOnly}
-              label="Afficher uniquement les projets dans la sandbox"
-            />
-          </div>
-        </div>
-
-        <div className="projects-list w-full flex justify-center overflow-y-auto py-6 overflow-x-hidden px-0 sm:px-6">
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-9 w-full max-w-[1200px]">
-            {displayedProjects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{
-                  duration: 0.3,
-                  ease: "easeOut",
-                  delay: index * 0.05,
-                }}
-              >
-                <ProjectCard project={project} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+        <CardSwap cardDistance={60} verticalDistance={70} delay={5000} pauseOnHover={false}>
+          {PROJECTS.map((project) => (
+            <Card
+              key={project.id}
+              onCardClick={() => console.log(`Click from ${project.title}`)}
+              className="text-iron-50 flex flex-col space-y-4"
+            >
+              <header className="card-header flex space-x-4">
+                <h3 className="self-center">{project.title}</h3>
+                <section className="flex">
+                  <Button
+                    type="button"
+                    icon={<Github strokeWidth={1} />}
+                    variant="ghost"
+                    size="sm"
+                    href={project.githubUrl}
+                    title={`Voir le code source de ${project.title} sur GitHub`}
+                    target="_blank"
+                  />
+                  {project.deploymentUrl && (
+                    <Button
+                      type="button"
+                      icon={<Rocket strokeWidth={1} />}
+                      variant="ghost"
+                      size="sm"
+                      href={project.deploymentUrl}
+                      title={`Accéder à ${project.deploymentUrl}`}
+                      target="_blank"
+                    />
+                  )}
+                </section>
+              </header>
+              <div className="card-body">
+                <p>{project.summary}</p>
+                <img
+                  src={project.illustrationUrl}
+                  alt={project.illustrationAlt}
+                  className="saturate-50 "
+                />
+              </div>
+            </Card>
+          ))}
+        </CardSwap>
       </div>
     </main>
   );

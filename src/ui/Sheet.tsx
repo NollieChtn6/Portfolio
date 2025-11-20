@@ -7,21 +7,21 @@ interface SheetProps {
   onLinkClick: () => void;
 }
 
-export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
-  const NAV_LINKS = [
-    { label: "Accueil", href: "/" },
-    { label: "À propos", href: "/about" },
-    { label: "Parcours", href: "/timeline" },
-    { label: "Projets", href: "/projects" },
-    { label: "Compétences", href: "/skills" },
-    { label: "Contact", href: "/contact" },
-  ];
+export const NAV_LINKS = [
+  { label: "Accueil", href: "/" },
+  { label: "À propos", href: "/about" },
+  { label: "Parcours", href: "/timeline" },
+  { label: "Projets", href: "/projects" },
+  // { label: "Compétences", href: "/skills" },
+  { label: "Contact", href: "/contact" },
+];
 
+export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
   return (
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300"
+          className="fixed inset-0 bg-black-950 bg-opacity-50 transition-opacity duration-300"
           onClick={onClose}
           onKeyUp={(e) => {
             if (e.key === "Escape") onClose();
@@ -35,7 +35,7 @@ export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
       <aside
         aria-modal="true"
         aria-label="Menu de navigation"
-        className={`z-50 fixed top-0 left-0 h-full w-screen sm:w-1/3 bg-iron-950 text-iron-50 shadow-lg p-4 transform transition-transform duration-300 space-y-12 ${
+        className={`z-50 fixed top-0 left-0 h-full w-screen sm:w-full bg-black-950 text-iron-50 shadow-lg p-4 transform transition-transform duration-300 space-y-12 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -53,11 +53,11 @@ export default function Sheet({ isOpen, onClose, onLinkClick }: SheetProps) {
               <Button
                 key={navLink.label}
                 type="button"
-                variant="secondary"
+                variant="ghost"
                 href={navLink.href}
-                className="w-40"
-                onClick={onLinkClick}
+                className="nav-btn"
                 size="md"
+                ariaLabel={`Aller à la page ${navLink.label}`}
               >
                 {navLink.label}
               </Button>
