@@ -1,6 +1,0 @@
-# robots.txt pour https://www.nolliechtn6.com
-
-User-agent: *
-Allow: /
-
-Sitemap: https://www.nolliechtn6.com/sitemap.xml
