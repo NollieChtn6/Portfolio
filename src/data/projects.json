@@ -1,193 +1,64 @@
 [
   {
-    "id": 1,
-    "title": "Crafted Treasures",
-    "isComplete": true,
-    "slug": "crafted-treasures",
-    "summary": "Découverte de flexbox et de la mise en page responsive",
-    "description": "Pour ce tout premier projet de ma (courte) carrière dans le développement, je découvre les bases du développement front-end et la mise en page responsive en réalisant la page d\u2019accueil d\u2019une boutique (fictive) de produits artisanaux. L\u2019objectif de ce projet était d\u2019apprendre à positionner correctement les éléments sur l\u2019interface en fonction de la taille de l\u2019écran et en n\u2019utilisant que du HTML et du CSS.",
-    "tasks": [
-      "Création de l\u2019interface client",
-      "Gestion du responsive à l\u2019aide des media queries"
-    ],
-    "tags": ["HTML", "CSS"],
-    "githubUrl": "https://github.com/NollieChtn6/Crafted-Treasures",
-    "deploymentUrl": "",
-    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Crafted-Treasures/main/result/crafted_treasures_final_result.png",
-    "illustrationAlt": "Page d\u2019accueil de la boutique en ligne Crafted Treasures",
-    "sandbox": true
+    "id": "projects-city-explorer",
+    "title": "City Guide",
+    "summary": "Une carte interactive pour partager et découvrir les meilleurs spots de votre ville",
+    "description": "Ce projet de carte interactive a été réalisé dans le cadre de ma formation à la Wild Code School. Il permet aux utilisateurs de découvrir des lieux intéressants dans une ville donnée. La carte utilise l\u2019API Leaflet pour afficher les lieux et permettre la navigation.",
+    "githubUrl": "https://github.com/NollieChtn6/2024-09-wns-jaune-cityguide",
+    "deploymentUrl": "https://092024-jaune-3.wns.wilders.dev/",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/2024-09-wns-jaune-cityguide/refs/heads/chore/update-final-result-picture/frontend/src/assets/cityguide_final_result.png",
+    "illustrationAlt": "Interface de la carte interactive"
   },
   {
-    "id": 2,
-    "title": "Animated Screen",
-    "isComplete": true,
-    "slug": "animated-screen",
-    "summary": "Découverte des animations CSS",
-    "description": "Ce petit projet m\u2019a permis de m\u2019amuser en découvrant les animations CSS. Truffé de détails, l\u2019écran est en fait une imbrication complexe de <div> qui s\u2019assemblent pour former une double interface\u00a0: un navigateur d\u2019un côté et un IDE de l\u2019autre.",
-    "tasks": [
-      "Création de l\u2019interface client",
-      "Gestion des animations avec les keyframes de CSS"
-    ],
-    "tags": ["HTML", "CSS"],
-    "githubUrl": "https://github.com/NollieChtn6/Simple-Screen-Animation",
-    "deploymentUrl": "",
-    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Simple-Screen-Animation/main/result/simple-screen-animation_result.png",
-    "illustrationAlt": "Interface principale de l\u2019application représsentant un petit écran animé et scintillant",
-    "sandbox": true
-  },
-  {
-    "id": 3,
-    "title": "To Do List",
-    "isComplete": true,
-    "slug": "basic-todo",
-    "summary": "Une to-do list simple et efficace",
-    "description": "Cette to-do list simplifiée permet de créer, modifier, supprimer des tâches et de les marquer comme terminées en manipulant le hook useState de React. À noter, elle ne prend pas  en charge la persistence des données. Une version 2.0 devrait arriver prochainement.",
-    "tasks": [
-      "Mise en place du CRUD avec Express et SQLite",
-      "Création de l\u2019API REST",
-      "Création de l\u2019interface client",
-      "Gestion de la liste des tâches à l\u2019aide du state de React",
-      "Mise en place des fonctionnalités de création, de modification et de suppression d\u2019une tâche."
-    ],
-    "tags": ["Express", "SQLite", "React", "CSS"],
-    "githubUrl": "https://github.com/NollieChtn6/Todo-List-2.0",
-    "deploymentUrl": "",
-    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Basic-Todo-List-Interface/main/result/todo_list_interface_final_result.png",
-    "illustrationAlt": "Interface de la to-do list, avec un formulaire et une liste de tâches",
-    "sandbox": true
-  },
-  {
-    "id": 4,
-    "title": "Potato\u2019s Blog",
-    "isComplete": false,
-    "slug": "potatos-blog",
-    "summary": "Une interface de blog et son API",
-    "description": "Création d\u2019une interface graphique permettant d\u2019afficher les articles d\u2019un blog (la partie back-end de ce projet est également disponible sur GitHub) et les catégories associées.",
-    "tasks": [
-      "Conceptualisation et création d\u2019une base de données avec PostgreSQL",
-      "Création de l\u2019interface client",
-      "Mise en place du routeur à l\u2019aide de React Router DOM",
-      "Utilisation du hook useContext de React pour stocker la liste des articles et y accéder à différents endroits de l\u2019application"
-    ],
-    "tags": [
-      "React",
-      "Tailwind CSS",
-      "Typescript",
-      "React Router",
-      "Shadcn/ui",
-      "Node.js",
-      "SQL",
-      "PostgreSQL"
-    ],
-    "githubUrl": "https://github.com/NollieChtn6/Potato-s-Blog",
-    "deploymentUrl": "",
-    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Potato-s-Blog/main/src/assets/result/potatos_blog_final_result.png",
-    "illustrationAlt": "Interface du blog de Patate",
-    "sandbox": false
-  },
-  {
-    "id": 5,
-    "title": "Impostor Online Game",
-    "isComplete": false,
-    "slug": "impostor-game",
-    "summary": "Un petit jeu en ligne pour découvrir GraphQL",
-    "description": "Cette version en ligne de l\u2019Imposteur est un projet à quatre mains. L\u2019objectif était de découvrir GraphQL et de gérer les appels au back-end en utilisation les mutations, les souscriptions et les queries. Une partie des données est stockée dans un contexte React.",
-    "tasks": [
-      "Création de l\u2019interface client",
-      "Mise en place du routeur et du système de redirection des joueurs",
-      "Mise en place des différentes fonctionnalités pour les joueurs (création et modification du profil, création d\u2019une salle, partage du lien de la salle aux autres joueurs, etc.)",
-      "Localisation de l\u2019interface à l\u2019aide de react-i18next"
-    ],
-    "tags": ["React", "Tailwind CSS", "Typescript", "Shadcn/ui", "GraphQL"],
-    "githubUrl": "https://github.com/antogyn/impostor-client",
-    "deploymentUrl": "https://impostor-client.vercel.app/",
-    "illustrationUrl": "https://raw.githubusercontent.com/antogyn/impostor-client/main/src/assets/result/impostor_final_result.png",
-    "illustrationAlt": "Page d\u2019accueil du jeu Impostor Online Game",
-    "sandbox": false
-  },
-  {
-    "id": 6,
-    "title": "CoHabit App",
-    "isComplete": true,
-    "slug": "cohabit-app",
-    "summary": "Une app conçue pour gérer tous les aspects de la vie en colocation... au même endroit\u00a0!",
-    "description": "Ce projet de fin de formation a été réalisé sur trois semaines, de la conceptualisation à la livraison d\u2019un MVP en passant par le développement. Un travail d\u2019équipe qui nous a permis de mettre en pratique notre apprentissage et de faire nos premiers pas dans le monde du développement\u00a0!",
-    "tasks": [
-      "Rédaction des spécifications fonctionnelles et du cahier des charges",
-      "Planification et suivi du développement en lien avec les méthodes agiles",
-      "Création des interfaces client, statiques et dynamiques, avec React",
-      "Mise en place des formulaires d\u2019authentification et de connexion",
-      "Mise en place des fonctionnalités liées à la gestion des tâches"
-    ],
-    "tags": [
-      "React",
-      "Tailwind CSS",
-      "Typescript",
-      "Shadcn/ui",
-      "Express",
-      "PostgreSQL",
-      "Sequelize"
-    ],
-    "githubUrl": "https://github.com/O-clock-Kimchi/O-Coloc-front",
-    "deploymentUrl": "https://o-coloc-front.onrender.com/",
-    "illustrationUrl": "https://raw.githubusercontent.com/O-clock-Kimchi/O-Coloc-front/main/src/assets/result/cohabit_final_result.png",
-    "illustrationAlt": "Page d\u2019accueil de CoHabit App",
-    "sandbox": false
-  },
-  {
-    "id": 8,
+    "id": "projects-pomodoro",
     "title": "Pomodoro Timer",
-    "isComplete": true,
-    "slug": "pomodoro-timer",
     "summary": "Un minuteur Pomodoro pour gérer son temps de travail",
     "description": "Ce minuteur Pomodoro est un projet réalisé en solo. Il permet de gérer son temps de travail et de pause à l\u2019aide d\u2019un minuteur. Il est possible de personnaliser la durée des sessions et des pauses.",
-    "tasks": [
-      "Création de l\u2019interface client",
-      "Gestion du minuteur avec le hook useState de React",
-      "Mise en place des fonctionnalités modification de la durée des sessions et des pauses"
-    ],
-    "tags": ["React"],
     "githubUrl": "https://github.com/NollieChtn6/Pomodoro-Timer",
     "deploymentUrl": "https://pomodoro-timer.nolliechtn6.com/",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Pomodoro-Timer/refs/heads/main/src/assets/result/pomodoro_final_result.png",
-    "illustrationAlt": "Interface du timer",
-    "sandbox": false
+    "illustrationAlt": "Interface du timer"
   },
   {
-    "id": 9,
+    "id": "projects-password-generator",
     "title": "Générateur de mots de passe",
-    "isComplete": true,
-    "slug": "password-generator",
     "summary": "Un générateur de mots de passe aléatoires",
     "description": "Ce générateur de mots de passe aléatoires permet de générer des mots de passe aléatoires en fonction des critères choisis par l\u2019utilisateur.",
-    "tasks": [
-      "Création de l\u2019interface client",
-      "Génération du mot de passe en fonction des crières choisis par l\u2019utilisateur (longueur, caractères spéciaux, etc.)"
-    ],
-    "tags": ["React"],
     "githubUrl": "https://github.com/NollieChtn6/Password-Generator",
     "deploymentUrl": "https://password-generator.nolliechtn6.com/",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Password-Generator/refs/heads/main/src/assets/result/password-generator_final_result.png",
-    "illustrationAlt": "Interface du générateur de mots de passe",
-    "sandbox": false
+    "illustrationAlt": "Interface du générateur de mots de passe"
   },
   {
-    "id": 10,
+    "id": "projects-weather-app",
     "title": "Live Weather App",
     "isComplete": true,
     "slug": "live-weather-app",
     "summary": "Une application météo en temps réel basée sur Visual Crossing Weather API",
-    "tasks": [
-      "Création de l\u2019interface client",
-      "Création de la carte interactive avec React Leaflet",
-      "Mise en place des fonctionnalités de géolocalisation automatique et de sélection d\u2019un point sur la carte",
-      "Récupération des données météo en temps réel à l\u2019aide de l\u2019API Visual Crossing Weather"
-    ],
-    "tags": ["React", "React Leaflet"],
+    "description": "Cette application météo en temps réel permet aux utilisateurs de consulter les conditions météorologiques actuelles et les prévisions pour n'importe quel endroit dans le monde. En utilisant l'API Visual Crossing Weather, l'application récupère des données météorologiques précises et à jour, offrant une expérience utilisateur fluide et informative. Les utilisateurs peuvent également interagir avec une carte interactive pour sélectionner des emplacements spécifiques ou utiliser la géolocalisation automatique pour obtenir les informations météo de leur position actuelle.",
     "githubUrl": "https://github.com/NollieChtn6/Live-Weather-App",
     "deploymentUrl": "https://weather-app.nolliechtn6.com/",
     "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/Live-Weather-App/refs/heads/main/src/assets/result/weather-app_final_result.png",
-    "illustrationAlt": "Interface du l\u2019application météo",
-    "sandbox": false
+    "illustrationAlt": "Interface du l\u2019application météo"
+  },
+  {
+    "id": "projects-impostor",
+    "title": "Impostor Online Game",
+    "summary": "Un petit jeu en ligne pour découvrir GraphQL",
+    "description": "Cette version en ligne de l\u2019Imposteur est un projet à quatre mains. L\u2019objectif était de découvrir GraphQL et de gérer les appels au back-end en utilisation les mutations, les souscriptions et les queries. Une partie des données est stockée dans un contexte React.",
+    "githubUrl": "https://github.com/antogyn/impostor-client",
+    "deploymentUrl": "https://impostor-client.vercel.app/",
+    "illustrationUrl": "https://raw.githubusercontent.com/antogyn/impostor-client/main/src/assets/result/impostor_final_result.png",
+    "illustrationAlt": "Page d\u2019accueil du jeu Impostor Online Game"
+  },
+  {
+    "id": "projects-cohabit",
+    "title": "CoHabit App",
+    "summary": "Une app conçue pour gérer tous les aspects de la vie en colocation... au même endroit\u00a0!",
+    "description": "Ce projet de fin de formation a été réalisé sur trois semaines, de la conceptualisation à la livraison d\u2019un MVP en passant par le développement. Un travail d\u2019équipe qui nous a permis de mettre en pratique notre apprentissage et de faire nos premiers pas dans le monde du développement\u00a0!",
+    "githubUrl": "https://github.com/O-clock-Kimchi/O-Coloc-front",
+    "deploymentUrl": "https://o-coloc-front.onrender.com/",
+    "illustrationUrl": "https://raw.githubusercontent.com/O-clock-Kimchi/O-Coloc-front/main/src/assets/result/cohabit_final_result.png",
+    "illustrationAlt": "Page d\u2019accueil de CoHabit App"
   }
 ]
