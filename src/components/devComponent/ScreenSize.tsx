@@ -1,7 +1,7 @@
 // Utils just for Dev to see BreakPoints Tailwind
 // Found on git = https://gist.github.com/Sh4yy/0300299ae60af4910bcb341703946330
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 function ScreenSize() {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -15,17 +15,17 @@ function ScreenSize() {
     }
 
     updateDimensions();
-    window.addEventListener('resize', updateDimensions);
+    window.addEventListener("resize", updateDimensions);
 
     return () => {
-      window.removeEventListener('resize', updateDimensions);
+      window.removeEventListener("resize", updateDimensions);
     };
   }, []);
 
   const { width, height } = dimensions;
 
   return (
-    <div className="fixed bottom-5 left-5 z-50 flex items-center space-x-2 rounded-full bg-pumice-900 px-2.5 py-1 font-mono text-xs font-medium text-floral-white">
+    <div className="fixed bottom-5 left-5 z-50 flex items-center space-x-2 rounded-full px-2.5 py-1 font-mono text-xs font-medium text-iron-50">
       <span>
         {width.toLocaleString()} x {height.toLocaleString()}
       </span>
