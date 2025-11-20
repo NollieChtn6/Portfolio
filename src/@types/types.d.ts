@@ -1,20 +1,15 @@
 import type { iconMapping } from "@/assets/skills_icons/iconMapping";
 
-export type ProjectType = {
-  id: number;
+export interface Project {
+  id: string;
   title: string;
-  isComplete: boolean;
-  slug: string;
   summary: string;
   description: string;
-  tags: string[];
-  tasks: string[];
   githubUrl: string;
   deploymentUrl: string;
   illustrationUrl: string;
   illustrationAlt: string;
-  sandbox: boolean;
-};
+}
 
 export type SkillType = {
   id: number;
@@ -24,42 +19,34 @@ export type SkillType = {
   alt: string;
 };
 
-export type PositionDescription = {
-  id: number;
-  title: string;
-  tasks: string[];
-};
+export interface ProfessionalMilestone {
+  id: string;
+  startMonth: string;
+  startYear: number;
+  endMonth: string;
+  endYear: number | null;
+  organisation: string;
+  city: string;
+  zipcode: number;
+  position: string;
+  details: ProfessionalMilestoneDetails;
+}
 
-export type MilestoneDetails = {
+export interface ProfessionalMilestoneDetails {
   positionType: string;
-  diploma?: string;
-  yearOfGraduation?: number;
-  positionDescription: PositionDescription[];
-};
+  tasks: string[];
+}
 
-export type MilestoneType = {
-  id: number;
-  isEducation: boolean;
-  fr: {
-    startMonth: string;
-    startYear: number;
-    endMonth: string;
-    endYear: number;
-    organisation: string;
-    city: string;
-    zipcode: number;
-    position: string;
-    details: MilestoneDetails;
-  };
-  en: {
-    startMonth: string;
-    startYear: number;
-    endMonth: string;
-    endYear: number;
-    organisation: string;
-    city: string;
-    zipcode: number;
-    position: string;
-    details: MilestoneDetails;
-  };
-};
+export interface EducationalMilestone {
+  id: string;
+  startMonth: string;
+  startYear: number;
+  endMonth: string;
+  endYear: number;
+  organisation: string;
+  city: string;
+  zipcode: number;
+  title: string;
+  diploma: string;
+  yearOfGraduation: number | null;
+}

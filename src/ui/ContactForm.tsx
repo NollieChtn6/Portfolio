@@ -57,7 +57,7 @@ export default function ContactForm() {
     >
       <form
         ref={formRef}
-        className="space-y-6 bg-persian-green-500/30 p-6 rounded-lg shadow-md max-w-[600px] mx-auto"
+        className="space-y-6 bg-navy-blue-950/10 p-6 rounded-lg max-w-[600px] shadow-[0_0_40px_rgba(63,66,255,0.5)] border border-cornflower-blue-400/40"
         name="contact"
         method="POST"
         onSubmit={handleSubmit}
@@ -128,7 +128,7 @@ export default function ContactForm() {
         <div className="btn-container flex place-content-end">
           <Button
             type="submit"
-            variant="primary"
+            variant="ghost"
             size="md"
             icon={<SendHorizontal size={20} />}
             ariaLabel="Envoyer le message"
