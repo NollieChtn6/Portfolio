@@ -3,14 +3,14 @@
     "id": "training-wcs",
     "startMonth": "septembre",
     "startYear": 2024,
-    "endMonth": "décembre",
+    "endMonth": "novembre",
     "endYear": 2025,
     "organisation": "Wild Code School",
     "city": "Paris",
     "zipcode": 75000,
     "title": "Formation \u00ab\u00a0Développeur fullstack JS\u00a0\u00bb en alternance",
-    "diploma": "",
-    "yearOfGraduation": null
+    "diploma": "Titre RNCP Concepteur Développeur d'Applications (niveau 6)",
+    "yearOfGraduation": 2025
   },
   {
     "id": "training-oclock",
