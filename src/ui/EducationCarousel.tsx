@@ -188,7 +188,9 @@ export default function EducationCarousel({
                 {item.diploma !== "" && (
                   <div>
                     <GraduationCap className="inline-block mr-2 mb-1" size={16} strokeWidth={1} />
-                    <span className="font-light text-sm">{item.diploma}</span>
+                    <span className="font-light text-sm">
+                      {item.diploma} ({item.yearOfGraduation})
+                    </span>
                   </div>
                 )}
               </div>
