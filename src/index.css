@@ -115,3 +115,20 @@ html {
   scrollbar-color: #888 transparent;
   scrollbar-width: thin;
 }
+
+.glowy-text {
+  color: #e5e8ff;
+  text-shadow:
+    0 0 1px #2118ff,
+    0 0 2px #3f42ff,
+    0 0 4px #6495ed;
+  transition: text-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.glowy-text:hover {
+ text-shadow:
+    0 0 2px #2118ff,
+    0 0 4px #3f42ff,
+    0 0 6px #6495ed;
+  transform: scale(1.02);
+}
