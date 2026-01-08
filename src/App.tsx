@@ -4,6 +4,7 @@ import { Outlet } from "react-router";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NavBar from "./components/Navbar";
+import EasterEgg from "./components/EasterEgg";
 //import ScreenSize from "./components/devComponent/ScreenSize";
 
 import { useWindowSize } from "./customHooks/useWindowSize";
@@ -20,6 +21,8 @@ export function App() {
 
   const { width } = useWindowSize();
   const isMobile = width < 768;
+
+  console.log("%c🥔", "font-family: monospace; opacity: 0.6; font-size: 24px;");
 
   useEffect(() => {
     fetchProjects();
@@ -54,6 +57,7 @@ export function App() {
           <Outlet />
         </div>
         <Footer />
+        <EasterEgg />
         {/* <ScreenSize /> */}
       </div>
     </div>

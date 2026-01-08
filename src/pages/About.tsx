@@ -2,11 +2,23 @@ import { PageTitle } from "@/ui/PageTitle";
 import { Button } from "@/ui/Button";
 import picture from "../assets/profile_picture.png";
 import { motion, easeOut } from "framer-motion";
+import { VerticalWordSwitcher } from "@/components/VerticalWordSwitcher";
 
 export function About() {
   const NAV_LINKS = [
     { label: "Parcours", href: "/timeline" },
     { label: "Projets", href: "/projects" },
+  ];
+
+  const passions: string[] = [
+    "la musculation",
+    "la randonnée",
+    "la montagne",
+    "le parapente",
+    "la broderie",
+    "la pâtisserie végétale",
+    "le café",
+    "mon chat Patate 🐱🥔 (a.k.a Badou)",
   ];
 
   const leftVariants = {
@@ -66,6 +78,10 @@ export function About() {
             </Button>
           ))}
         </motion.div>
+        <div className="flex items-center space-x-2">
+          <p className="">💙 J&rsquo;aime </p>
+          <VerticalWordSwitcher words={passions} />
+        </div>
       </motion.section>
 
       <motion.section
