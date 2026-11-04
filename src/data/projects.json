@@ -1,5 +1,25 @@
 [
   {
+    "id": "projects-pecule",
+    "title": "Pécule",
+    "summary": "Un outil de gestion de budget",
+    "description": "Cet outil de planification budgétaire inclut notamment un système d'enveloppes de dépenses et de provisions pour gérer effecicacement son budget au quotidien et à moyen terme en anticipant les dépenses.",
+    "githubUrl": "https://github.com/NollieChtn6/budget-planner",
+    "deploymentUrl": "https://pecule.nolliechtn6.com/",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/budget-planner/refs/heads/develop/apps/web/public/pecule_final_result.png",
+    "illustrationAlt": "Interface de l'application Pécule"
+  },
+  {
+    "id": "projects-thermik",
+    "title": "Thermik",
+    "summary": "Un carnet de progression pour le parapente",
+    "description": "Ce projet permet aux pilotes de parapente de suivre leur progression et d'analyser leurs performances. Il offre des fonctionnalités telles que l'enregistrement des vols et du matériel, le suivi de la pratique et la visualisation des statistiques.",
+    "githubUrl": "https://github.com/NollieChtn6/paragliding-logbook",
+    "deploymentUrl": "https://thermik.nolliechtn6.com/",
+    "illustrationUrl": "https://raw.githubusercontent.com/NollieChtn6/paragliding-logbook/refs/heads/develop/apps/web/public/thermik_final_result.png",
+    "illustrationAlt": "Interface de l'application Thermik"
+  },
+  {
     "id": "projects-city-explorer",
     "title": "City Guide",
     "summary": "Une carte interactive pour partager et découvrir les meilleurs spots de votre ville",
