@@ -1,55 +1,17 @@
-import { PageTitle } from "@/ui/PageTitle";
-import { Button } from "@/ui/Button";
+import { ArrowRight } from "lucide-react";
+
 import picture from "../assets/profile_picture.png";
-import { motion, easeOut } from "framer-motion";
-import { VerticalWordSwitcher } from "@/components/VerticalWordSwitcher";
+import { Button } from "@/ui/Button";
+import { PassionLabels } from "@/ui/PassionLabels";
 
 export function About() {
-  const NAV_LINKS = [
-    { label: "Parcours", href: "/timeline" },
-    { label: "Projets", href: "/projects" },
-  ];
-
-  const passions: string[] = [
-    "la musculation",
-    "la randonnée",
-    "la montagne",
-    "le parapente",
-    "la broderie",
-    "la pâtisserie végétale",
-    "le café",
-    "mon chat Patate 🐱🥔 (a.k.a Badou)",
-  ];
-
-  const leftVariants = {
-    hidden: { opacity: 0, y: -40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.7, ease: easeOut },
-    },
-  };
-
-  const rightVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.7, ease: easeOut },
-    },
-  };
-
   return (
-    <main className="about-container flex flex-col md:flex-row overflow-y-auto w-full h-full">
-      <motion.section
-        aria-labelledby="about-content"
-        className="about-content flex flex-col w-full md:w-1/2 p-10 space-y-6 text-iron-200 h-full justify-center"
-        variants={leftVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <PageTitle title="À propos de moi" />
-        <motion.p className="text-content leading-relaxed" variants={leftVariants}>
+    <main className="mx-auto grid w-full max-w-7xl flex-1 gap-12 px-5 pb-16 pt-6 md:grid-cols-12 md:px-10">
+      <section className="md:col-span-7" aria-labelledby="about-title">
+        <h1 id="about-title" className="display display-lg">
+          À propos de moi
+        </h1>
+        <p className="prose-body mt-8">
           Développeuse web fullstack, je combine curiosité, rigueur technique et envie de créer des
           solutions qui ont un véritable impact. Mon parcours m&rsquo;a permis de développer des
           compétences solides en Angular/Laravel et React/Node.js, ainsi qu&rsquo;une réelle
@@ -59,46 +21,38 @@ export function About() {
           sensible à l&rsquo;impact social et environnemental des projets auxquels je contribue, et
           je cherche toujours à apprendre, à collaborer et à apporter ma pierre à des initiatives
           concrètes et positives.
-        </motion.p>
+        </p>
 
-        <motion.div
-          className="about-btns-container flex justify-evenly w-full md:w-3/4 self-center"
-          variants={leftVariants}
-        >
-          {NAV_LINKS.map((navLink) => (
-            <Button
-              key={navLink.label}
-              type="button"
-              variant="ghost"
-              size="md"
-              href={navLink.href}
-              className="nav-btn"
-            >
-              {navLink.label}
-            </Button>
-          ))}
-        </motion.div>
-        <div className="flex items-center space-x-2">
-          <p className="">💙 J&rsquo;aime </p>
-          <VerticalWordSwitcher words={passions} />
+        <div className="mt-12 flex flex-wrap gap-4">
+          <Button href="/timeline" icon={<ArrowRight aria-hidden="true" size={20} />}>
+            Mon parcours
+          </Button>
+          <Button variant="ghost" href="/projects">
+            Mes projets
+          </Button>
         </div>
-      </motion.section>
+      </section>
 
-      <motion.section
-        className="hidden md:flex about-img-container justify-center items-center w-full md:w-1/2 p-8"
-        variants={rightVariants}
-        initial="hidden"
-        animate="visible"
+      <div
+        className="stamp-in md:col-span-5 md:justify-self-end"
+        style={{ "--r": "2deg", "--r0": "-5deg", "--i": 1 } as React.CSSProperties}
       >
-        <motion.img
-          src={picture}
-          alt="Une femme aux cheveux noirs, souriant"
-          className="rounded-tl-[35%] rounded-br-[35%] border-4 border-iron-300 md:max-w-[300px] lg:max-w-[350px] xl:max-w-[400px]"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: easeOut }}
-        />
-      </motion.section>
+        <div className="label-card max-w-sm p-3 md:max-w-md">
+          <img
+            src={picture}
+            alt="Une femme aux cheveux noirs, souriant"
+            className="block w-full rounded-[3px]"
+          />
+        </div>
+      </div>
+
+      <section aria-labelledby="passions-title" className="md:col-span-12">
+        <h2 id="passions-title" className="display display-md">
+          Notes de dégustation
+        </h2>
+        <p className="mb-6 mt-3 text-lg">Mes passions.</p>
+        <PassionLabels />
+      </section>
     </main>
   );
 }
