@@ -1,6 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { SendHorizontal } from "lucide-react";
-import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./Button";
 import { Toast } from "./Toast";
@@ -50,14 +49,10 @@ export default function ContactForm() {
   }, [toastProps.isVisible]);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
+    <div className="stamp-in" style={{ "--r": "-0.8deg", "--r0": "-3deg", "--i": 1 } as React.CSSProperties}>
       <form
         ref={formRef}
-        className="space-y-6 bg-navy-blue-950/10 p-6 rounded-lg max-w-[600px] shadow-[0_0_40px_rgba(63,66,255,0.5)] border border-cornflower-blue-400/40"
+        className="label-card space-y-5 p-6 md:p-8"
         name="contact"
         method="POST"
         onSubmit={handleSubmit}
@@ -65,8 +60,8 @@ export default function ContactForm() {
         <input type="hidden" name="_format" value="plain" />
         <input type="text" name="_gotcha" className="hidden" />
 
-        <div className="form-input-group">
-          <label htmlFor="firstName" className="label">
+        <div>
+          <label htmlFor="firstName" className="field-label">
             Prénom
           </label>
           <input
@@ -75,13 +70,13 @@ export default function ContactForm() {
             name="firstName"
             required
             placeholder="Votre prénom"
-            className="input"
+            className="field"
           />
-          <ValidationError prefix="Prénom" field="firstName" errors={state.errors} />
+          <ValidationError prefix="Prénom" field="firstName" errors={state.errors} className="field-error" />
         </div>
 
-        <div className="form-input-group">
-          <label htmlFor="lastName" className="label">
+        <div>
+          <label htmlFor="lastName" className="field-label">
             Nom
           </label>
           <input
@@ -90,13 +85,13 @@ export default function ContactForm() {
             name="lastName"
             required
             placeholder="Votre nom"
-            className="input"
+            className="field"
           />
-          <ValidationError prefix="Nom" field="lastName" errors={state.errors} />
+          <ValidationError prefix="Nom" field="lastName" errors={state.errors} className="field-error" />
         </div>
 
-        <div className="form-input-group">
-          <label htmlFor="email" className="label">
+        <div>
+          <label htmlFor="email" className="field-label">
             Email
           </label>
           <input
@@ -105,13 +100,13 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="Votre email"
-            className="input"
+            className="field"
           />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <ValidationError prefix="Email" field="email" errors={state.errors} className="field-error" />
         </div>
 
-        <div className="form-input-group">
-          <label htmlFor="message" className="label">
+        <div>
+          <label htmlFor="message" className="field-label">
             Message
           </label>
           <textarea
@@ -120,16 +115,14 @@ export default function ContactForm() {
             required
             rows={4}
             placeholder="Votre message..."
-            className="textarea"
+            className="field"
           />
-          <ValidationError prefix="Message" field="message" errors={state.errors} />
+          <ValidationError prefix="Message" field="message" errors={state.errors} className="field-error" />
         </div>
 
-        <div className="btn-container flex place-content-end">
+        <div className="flex justify-end">
           <Button
             type="submit"
-            variant="ghost"
-            size="md"
             icon={<SendHorizontal size={20} />}
             ariaLabel="Envoyer le message"
             disabled={state.submitting}
@@ -146,6 +139,6 @@ export default function ContactForm() {
         message={toastProps.message}
         onClose={() => setToastProps((prev) => ({ ...prev, isVisible: false }))}
       />
-    </motion.div>
+    </div>
   );
 }

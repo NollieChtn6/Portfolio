@@ -1,5 +1,20 @@
 [
   {
+    "id": "job-cnccfp",
+    "startMonth": "janvier",
+    "startYear": 2026,
+    "endMonth": "",
+    "endYear": null,
+    "organisation": "Commission nationale des comptes de campagne et des financements politiques",
+    "city": "Paris",
+    "zipcode": 75015,
+    "position": "Développeuse fullstack",
+    "details": {
+      "positionType": "CDD",
+      "tasks": []
+    }
+  },
+  {
     "id": "job-db",
     "startMonth": "octobre",
     "startYear": 2024,
@@ -12,7 +27,7 @@
     "details": {
       "positionType": "apprentissage",
       "tasks": [
-        "Refonte d'un module applicatif Angular/Laravel pour la gestion budgétaire",
+        "Refonte d'un module applicatif en Angular/Laravel pour la préparation du budget de l'État",
         "Conception et exposition d'API REST, intégration PostgreSQL",
         "Implémentation des règles métier et sécurisation des traitements",
         "Collaboration avec les utilisateurs pour faciliter l'adoption et répondre aux besoins existants",
@@ -21,7 +36,7 @@
     }
   },
   {
-    "id": "job-db",
+    "id": "job-cri",
     "startMonth": "octobre",
     "startYear": 2025,
     "endMonth": "",
@@ -32,7 +47,10 @@
     "position": "Développeuse web bénévole",
     "details": {
       "positionType": "bénévolat",
-      "tasks": ["Refonte de l'intranet de l'association"]
+      "tasks": [
+        "Refonte du site vitrine de l'association",
+        "Refonte de l'intranet interne pour la gestion des bénévoles et des missions"
+      ]
     }
   },
   {

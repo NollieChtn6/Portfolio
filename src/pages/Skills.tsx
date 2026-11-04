@@ -1,95 +1,49 @@
 import type { SkillType } from "@/@types/types";
-import { useSkillsStore } from "@/store/skillsStore";
-import { SkillsBlock } from "@/ui/SkillBlock";
-import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { iconMapping } from "@/assets/skills_icons/iconMapping";
+import skillsData from "@/data/skills.json";
+
+const SKILLS = skillsData as SkillType[];
+
+const GROUPS: { type: SkillType["type"]; title: string }[] = [
+  { type: "front", title: "Front-end" },
+  { type: "back", title: "Back-end" },
+  { type: "database", title: "Bases de données" },
+  { type: "outil", title: "Outils" },
+  { type: "soft-skill", title: "Savoir-être" },
+];
 
 export function Skills() {
-  const { skills } = useSkillsStore();
-
-  const { frontEndSkills, backEndSkills, databaseSkills, toolsSkills, softSkills } = useMemo(() => {
-    if (!skills) {
-      return {
-        frontEndSkills: [],
-        backEndSkills: [],
-        databaseSkills: [],
-        toolsSkills: [],
-        softSkills: [],
-      };
-    }
-
-    return skills.reduce(
-      (acc, skill) => {
-        switch (skill.type) {
-          case "front":
-            acc.frontEndSkills.push(skill);
-            break;
-          case "back":
-            acc.backEndSkills.push(skill);
-            break;
-          case "database":
-            acc.databaseSkills.push(skill);
-            break;
-          case "outil":
-            acc.toolsSkills.push(skill);
-            break;
-          case "soft-skill":
-            acc.softSkills.push(skill);
-            break;
-        }
-        return acc;
-      },
-      {
-        frontEndSkills: [] as SkillType[],
-        backEndSkills: [] as SkillType[],
-        databaseSkills: [] as SkillType[],
-        toolsSkills: [] as SkillType[],
-        softSkills: [] as SkillType[],
-      },
-    );
-  }, [skills]);
-
   return (
-    <main className="skills-container flex flex-col md:flex-row h-full overflow-scroll">
-      <div className="skills-title flex w-full h-[10%] md:h-full md:w-[10%] items-center md:justify-center over">
-        <h2 className="page-title">Compétences</h2>
-      </div>
-      <div className="skills-content flex-col md:flex-row w-full md:h-full justify-evenly p-6 space-y-6 lg:overflow-y-scroll">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <SkillsBlock title="Front-End" skills={frontEndSkills} />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <SkillsBlock title="Back-End" skills={backEndSkills} />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <SkillsBlock title="Base de données" skills={databaseSkills} />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <SkillsBlock title="Outils" skills={toolsSkills} />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <SkillsBlock title="Soft Skills" skills={softSkills} />
-        </motion.div>
+    <main className="mx-auto w-full max-w-7xl flex-1 px-5 pb-16 pt-6 md:px-10">
+      <h1 className="display display-lg">Compétences</h1>
+
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {GROUPS.map((group, index) => (
+          <section
+            key={group.type}
+            aria-labelledby={`skills-${group.type}`}
+            className="label-card stamp-in p-6"
+            style={{ "--r": index % 2 ? "0.7deg" : "-0.7deg", "--r0": "-3deg", "--i": index } as React.CSSProperties}
+          >
+            <h2 id={`skills-${group.type}`} className="heading text-2xl">
+              {group.title}
+            </h2>
+            <ul className="mt-5 flex flex-wrap gap-2.5">
+              {SKILLS.filter((skill) => skill.type === group.type).map((skill) => (
+                <li key={skill.id} className="stamp !bg-white">
+                  <img
+                    src={iconMapping[skill["icon-mapping"]]}
+                    alt=""
+                    width={22}
+                    height={22}
+                    className="h-[22px] w-[22px] object-contain"
+                  />
+                  {skill.name}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
       </div>
     </main>
   );
