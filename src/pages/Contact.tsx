@@ -1,39 +1,42 @@
-import { PageTitle } from "@/ui/PageTitle";
-import picture from "../assets/profile_picture_colors.png";
+import { Github, Linkedin } from "lucide-react";
 
+import { SOCIAL_LINKS } from "@/data/nav";
 import ContactForm from "@/ui/ContactForm";
-import { motion } from "motion/react";
+
+const ICONS = { LinkedIn: Linkedin, GitHub: Github };
 
 export function Contact() {
   return (
-    // <main className="contact-container flex flex-col md:flex-row h-full overflow-hidden">
-    //   <PageTitle title="Contact" />
-    //   <section
-    //     aria-labelledby="contact-heading"
-    //     className="contact-content flex flex-col md:flex-row w-full h-[90%] md:h-full"
-    //   >
-    //     <div className="flex flex-col grow p-6 w-full md:w-2/5 max-w-4xl mx-auto space-y-6 justify-center">
-    //       <ContactForm />
-    //     </div>
-    //     <div className="hidden md:flex h-2/4 md:h-full p-9 md:w-2/4 place-content-center items-center">
-    //       <motion.div
-    //         initial={{ opacity: 0, y: -30 }}
-    //         animate={{ opacity: 1, y: 0 }}
-    //         transition={{ duration: 0.6, ease: "easeOut" }}
-    //       >
-    //         <img
-    //           src={picture}
-    //           alt="Une petite fille avec une corne de licorne, une tresse et des lunettes"
-    //           className="rounded-tl-[35%] rounded-br-[35%] border-4 border-iron-500 brightness-80 md:max-w-[400px] max-md:h-[300px]"
-    //         />
-    //       </motion.div>
-    //     </div>
-    //   </section>
-    // </main>
+    <main className="mx-auto grid w-full max-w-7xl flex-1 gap-12 px-5 pb-16 pt-6 lg:grid-cols-12 md:px-10">
+      <section className="lg:col-span-5">
+        <h1 className="display display-lg lg:!text-[clamp(2.5rem,5.2vw,4.25rem)]">Contact</h1>
+        <p className="prose-body mt-8">
+          Une question ? Écrivez-moi, je vous répondrai dès que possible.
+        </p>
+        <ul className="mt-8 flex flex-wrap gap-5">
+          {SOCIAL_LINKS.map((social) => {
+            const Icon = ICONS[social.label];
+            return (
+              <li key={social.label}>
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.ariaLabel}
+                  className="text-link inline-flex items-center gap-2"
+                >
+                  <Icon aria-hidden="true" size={20} />
+                  {social.label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
-    <main className="about-container flex flex-col overflow-y-auto w-full h-full p-10 space-y-6">
-      <PageTitle title="Contact" />
-      <ContactForm />
+      <div className="lg:col-span-7">
+        <ContactForm />
+      </div>
     </main>
   );
 }
